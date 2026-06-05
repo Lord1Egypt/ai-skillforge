@@ -1,10 +1,6 @@
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/Lord1Egypt/ai-skillforge/main/assets/banner.png" alt="ai-skillforge" width="100%" />
-
 # skillforge-agent
 
-**539 lazy-loading AI skills for Claude, Gemini, and Scientific agents**
+> 539 lazy-loading AI skills for Claude, Gemini, and Scientific agents
 
 [![PyPI version](https://img.shields.io/pypi/v/skillforge-agent?style=flat-square&color=blue)](https://pypi.org/project/skillforge-agent/)
 [![npm version](https://img.shields.io/npm/v/skillforge-agent?style=flat-square&color=red)](https://www.npmjs.com/package/skillforge-agent)
