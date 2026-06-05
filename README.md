@@ -184,7 +184,7 @@ ai-skillforge/
 │   └── scientific/      # 148 scientific research skills
 ├── index.json           # Unified skill registry (lazy-loaded)
 ├── python/              # Python package source
-│   └── ai_skillforge/
+│   └── skillforge_agent/
 │       ├── __init__.py
 │       ├── loader.py
 │       └── cli.py

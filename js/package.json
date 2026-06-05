@@ -1,6 +1,6 @@
 {
   "name": "skillforge-agent",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "539 lazy-loading AI skills for Claude, Gemini, and Scientific agents",
   "main": "src/index.js",
   "types": "src/index.d.ts",
