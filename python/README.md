@@ -125,7 +125,7 @@ npx skillforge load exploratory-data-analysis
 
 ## Skill Categories
 
-### Gemini (538 skills)
+### Gemini (51 skills)
 General-purpose agent skills covering accessibility, data analysis, cloud tools, frameworks, APIs, and more.
 
 ```python
@@ -180,7 +180,7 @@ Returns skill counts per category.
 ai-skillforge/
 ├── skills/
 │   ├── claude/          # 340 Claude Code system prompts
-│   ├── gemini/          # 538 Gemini agent skills
+│   ├── gemini/          # 51 unique Gemini agent skills
 │   └── scientific/      # 148 scientific research skills
 ├── index.json           # Unified skill registry (lazy-loaded)
 ├── python/              # Python package source
