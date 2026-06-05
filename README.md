@@ -2,24 +2,24 @@
 
 <img src="https://raw.githubusercontent.com/Lord1Egypt/ai-skillforge/main/assets/banner.png" alt="ai-skillforge" width="100%" />
 
-# ai-skillforge
+# agent-skillforge
 
 **539 lazy-loading AI skills for Claude, Gemini, and Scientific agents**
 
-[![PyPI version](https://img.shields.io/pypi/v/ai-skillforge?style=flat-square&color=blue)](https://pypi.org/project/ai-skillforge/)
-[![npm version](https://img.shields.io/npm/v/ai-skillforge?style=flat-square&color=red)](https://www.npmjs.com/package/ai-skillforge)
+[![PyPI version](https://img.shields.io/pypi/v/agent-skillforge?style=flat-square&color=blue)](https://pypi.org/project/agent-skillforge/)
+[![npm version](https://img.shields.io/npm/v/agent-skillforge?style=flat-square&color=red)](https://www.npmjs.com/package/agent-skillforge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 [![Skills](https://img.shields.io/badge/skills-539-brightgreen?style=flat-square)](index.json)
-[![Python](https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square)](https://pypi.org/project/ai-skillforge/)
-[![Node](https://img.shields.io/badge/node-14%2B-green?style=flat-square)](https://www.npmjs.com/package/ai-skillforge)
+[![Python](https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square)](https://pypi.org/project/agent-skillforge/)
+[![Node](https://img.shields.io/badge/node-14%2B-green?style=flat-square)](https://www.npmjs.com/package/agent-skillforge)
 
 </div>
 
 ---
 
-## What is ai-skillforge?
+## What is agent-skillforge?
 
-**ai-skillforge** is a unified toolkit of 539 production-ready AI agent skills — merged from three specialized repositories into one clean package.
+**agent-skillforge** is a unified toolkit of 539 production-ready AI agent skills — merged from three specialized repositories into one clean package.
 
 | Category | Count | Source |
 |----------|-------|--------|
@@ -44,13 +44,13 @@ load("eda")           # Only THIS skill is loaded, only when you need it
 ### Python
 
 ```bash
-pip install ai-skillforge
+pip install agent-skillforge
 ```
 
 ### Node.js
 
 ```bash
-npm install ai-skillforge
+npm install agent-skillforge
 ```
 
 ---
@@ -60,7 +60,7 @@ npm install ai-skillforge
 ### Python
 
 ```python
-from ai_skillforge import load, search, list_skills, categories
+from agent_skillforge import load, search, list_skills, categories
 
 # Load a skill — reads from disk only at this moment
 skill = load("scientific-brainstorming")
@@ -87,8 +87,8 @@ print(categories())
 ### JavaScript / TypeScript
 
 ```js
-const { load, search, listSkills, categories } = require('ai-skillforge')
-// or: import { load, search, listSkills, categories } from 'ai-skillforge'
+const { load, search, listSkills, categories } = require('agent-skillforge')
+// or: import { load, search, listSkills, categories } from 'agent-skillforge'
 
 // Load a skill
 const skill = load('exploratory-data-analysis')

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Command-line interface for ai-skillforge."""
+"""Command-line interface for agent-skillforge."""
 
 import argparse
 import sys
@@ -9,7 +9,7 @@ from .loader import load, search, list_skills, categories
 def main():
     parser = argparse.ArgumentParser(
         prog="skillforge",
-        description="ai-skillforge — 1,026 lazy-loading AI skills"
+        description="agent-skillforge — 1,026 lazy-loading AI skills"
     )
     sub = parser.add_subparsers(dest="command")
 

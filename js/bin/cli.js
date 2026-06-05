@@ -7,7 +7,7 @@ const [,, command, ...args] = process.argv
 
 function help() {
   console.log(`
-ai-skillforge CLI — 1,026 lazy-loading AI skills
+agent-skillforge CLI — 1,026 lazy-loading AI skills
 
 Usage:
   skillforge load <name> [--category <cat>]   Load and print a skill

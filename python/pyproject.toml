@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.backends.legacy:build"
 
 [project]
-name = "ai-skillforge"
+name = "agent-skillforge"
 version = "1.0.0"
 description = "1,026 lazy-loading AI skills for Claude, Gemini, and Scientific agents"
 readme = "../README.md"
@@ -34,7 +34,7 @@ skillforge = "ai_skillforge.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["ai_skillforge*"]
+include = ["agent_skillforge*"]
 
 [tool.setuptools.package-data]
-ai_skillforge = ["index.json", "skills/**/*"]
+agent_skillforge = ["index.json", "skills/**/*"]

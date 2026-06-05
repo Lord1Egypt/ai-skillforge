@@ -50,8 +50,8 @@
 - Final unique skills: **539** (Claude 340, Scientific 148, Gemini 51)
 
 **Package name:** `ai-skillforge`
-- pip: `pip install ai-skillforge`
-- npm: `npm install ai-skillforge`
+- pip: `pip install agent-skillforge`
+- npm: `npm install agent-skillforge`
 - GitHub: https://github.com/Lord1Egypt/ai-skillforge
 
 **Files built:**

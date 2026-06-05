@@ -1,5 +1,5 @@
 {
-  "name": "ai-skillforge",
+  "name": "agent-skillforge",
   "version": "1.0.0",
   "description": "1,026 lazy-loading AI skills for Claude, Gemini, and Scientific agents",
   "main": "src/index.js",
