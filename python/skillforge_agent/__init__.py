@@ -1,5 +1,5 @@
 """
-agent-skillforge — Lazy-loading AI skills toolkit
+skillforge-agent — Lazy-loading AI skills toolkit
 1,026 skills across Claude, Gemini, and Scientific categories.
 """
 
