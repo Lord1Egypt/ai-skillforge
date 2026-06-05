@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "skillforge-agent"
 version = "1.0.0"
 description = "1,026 lazy-loading AI skills for Claude, Gemini, and Scientific agents"
-readme = "../README.md"
+readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Lord1Egypt", email = "akim.221992@gmail.com" }]
 keywords = ["ai", "skills", "claude", "gemini", "agents", "prompts", "llm"]
