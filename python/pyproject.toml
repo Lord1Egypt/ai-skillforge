@@ -1,6 +1,6 @@
 [build-system]
 requires = ["setuptools>=68", "wheel"]
-build-backend = "setuptools.backends.legacy:build"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "agent-skillforge"
@@ -30,7 +30,7 @@ Repository = "https://github.com/Lord1Egypt/ai-skillforge"
 Issues = "https://github.com/Lord1Egypt/ai-skillforge/issues"
 
 [project.scripts]
-skillforge = "ai_skillforge.cli:main"
+skillforge = "agent_skillforge.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
