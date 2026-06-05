@@ -1,0 +1,40 @@
+{
+  "name": "ai-skillforge",
+  "version": "1.0.0",
+  "description": "1,026 lazy-loading AI skills for Claude, Gemini, and Scientific agents",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "bin": {
+    "skillforge": "bin/cli.js"
+  },
+  "files": [
+    "src/",
+    "skills/",
+    "index.json",
+    "bin/"
+  ],
+  "keywords": [
+    "ai",
+    "skills",
+    "claude",
+    "gemini",
+    "agents",
+    "prompts",
+    "llm",
+    "lazy-loading",
+    "toolkit"
+  ],
+  "author": "Lord1Egypt <akim.221992@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lord1Egypt/ai-skillforge.git"
+  },
+  "homepage": "https://github.com/Lord1Egypt/ai-skillforge",
+  "bugs": {
+    "url": "https://github.com/Lord1Egypt/ai-skillforge/issues"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

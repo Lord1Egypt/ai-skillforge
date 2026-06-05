@@ -1,0 +1,3240 @@
+{
+  "version": "1.0.0",
+  "total": 539,
+  "skills": [
+    {
+      "name": "Claude-Sonnet-3.7",
+      "category": "claude",
+      "description": "",
+      "path": "skills/claude/Claude-Sonnet-3.7.md"
+    },
+    {
+      "name": "agent-prompt-agent-creation-architect",
+      "category": "claude",
+      "description": "System prompt for creating custom AI agents with detailed specifications",
+      "path": "skills/claude/agent-prompt-agent-creation-architect.md"
+    },
+    {
+      "name": "agent-prompt-auto-mode-rule-reviewer",
+      "category": "claude",
+      "description": "Reviews and critiques user-defined auto mode classifier rules for clarity, completeness, conflicts, and actionability",
+      "path": "skills/claude/agent-prompt-auto-mode-rule-reviewer.md"
+    },
+    {
+      "name": "agent-prompt-background-agent-state-classifier",
+      "category": "claude",
+      "description": "Classifies the tail of a background agent transcript as working, blocked, done, or failed and returns concise state JSON",
+      "path": "skills/claude/agent-prompt-background-agent-state-classifier.md"
+    },
+    {
+      "name": "agent-prompt-background-job-agent-instructions",
+      "category": "claude",
+      "description": "Instructs the built-in background job agent to narrate progress, restate tool results, and emit explicit result, needs input, or failed status signals",
+      "path": "skills/claude/agent-prompt-background-job-agent-instructions.md"
+    },
+    {
+      "name": "agent-prompt-bash-command-description-writer",
+      "category": "claude",
+      "description": "Instructions for generating clear, concise command descriptions in active voice for bash commands",
+      "path": "skills/claude/agent-prompt-bash-command-description-writer.md"
+    },
+    {
+      "name": "agent-prompt-bash-command-prefix-detection",
+      "category": "claude",
+      "description": "System prompt for detecting command prefixes and command injection",
+      "path": "skills/claude/agent-prompt-bash-command-prefix-detection.md"
+    },
+    {
+      "name": "agent-prompt-batch-slash-command",
+      "category": "claude",
+      "description": "Instructions for orchestrating a large, parallelizable change across a codebase.",
+      "path": "skills/claude/agent-prompt-batch-slash-command.md"
+    },
+    {
+      "name": "agent-prompt-claude-guide-agent",
+      "category": "claude",
+      "description": "System prompt for the claude-guide agent that helps users understand and use Claude Code, the Claude Agent SDK and the Claude API effectively.",
+      "path": "skills/claude/agent-prompt-claude-guide-agent.md"
+    },
+    {
+      "name": "agent-prompt-claudemd-creation",
+      "category": "claude",
+      "description": "System prompt for analyzing codebases and creating CLAUDE.md documentation files",
+      "path": "skills/claude/agent-prompt-claudemd-creation.md"
+    },
+    {
+      "name": "agent-prompt-code-review-part-1-base-finder-angles",
+      "category": "claude",
+      "description": "Line-by-line diff scan instructions for the /code-review slash command's finder-angle phase",
+      "path": "skills/claude/agent-prompt-code-review-part-1-base-finder-angles.md"
+    },
+    {
+      "name": "agent-prompt-code-review-part-2-low-effort-mode",
+      "category": "claude",
+      "description": "Low-effort /code-review prompt that reads the diff once and returns up to four hunk-visible runtime correctness findings",
+      "path": "skills/claude/agent-prompt-code-review-part-2-low-effort-mode.md"
+    },
+    {
+      "name": "agent-prompt-code-review-part-3-extra-high-and-maximum-effort-modes",
+      "category": "claude",
+      "description": "Extra-high and maximum-effort /code-review prompt that runs five finder angles, one-vote verification, a gap sweep, and capped JSON findings",
+      "path": "skills/claude/agent-prompt-code-review-part-3-extra-high-and-maximum-effort-modes.md"
+    },
+    {
+      "name": "agent-prompt-code-review-part-5-recall-biased-verification-phase",
+      "category": "claude",
+      "description": "Recall-biased /code-review verification phase that treats realistic uncertain findings as plausible unless code refutes them",
+      "path": "skills/claude/agent-prompt-code-review-part-5-recall-biased-verification-phase.md"
+    },
+    {
+      "name": "agent-prompt-code-review-part-6-medium-effort-mode",
+      "category": "claude",
+      "description": "Medium-effort /code-review prompt that favors precision with three finder angles, one-vote verification, and up to eight JSON findings",
+      "path": "skills/claude/agent-prompt-code-review-part-6-medium-effort-mode.md"
+    },
+    {
+      "name": "agent-prompt-code-review-part-7-high-effort-mode",
+      "category": "claude",
+      "description": "High-effort /code-review prompt that favors recall with three finder angles, recall-biased verification, and up to ten JSON findings",
+      "path": "skills/claude/agent-prompt-code-review-part-7-high-effort-mode.md"
+    },
+    {
+      "name": "agent-prompt-code-review-part-8-github-comment-posting",
+      "category": "claude",
+      "description": "Optional /code-review instructions for posting findings as GitHub inline PR comments when --comment is passed",
+      "path": "skills/claude/agent-prompt-code-review-part-8-github-comment-posting.md"
+    },
+    {
+      "name": "agent-prompt-code-review-part-9-fix-application",
+      "category": "claude",
+      "description": "Optional /code-review instructions for applying findings to the working tree when --fix is passed",
+      "path": "skills/claude/agent-prompt-code-review-part-9-fix-application.md"
+    },
+    {
+      "name": "agent-prompt-coding-session-title-generator",
+      "category": "claude",
+      "description": "Generates a title for the coding session.",
+      "path": "skills/claude/agent-prompt-coding-session-title-generator.md"
+    },
+    {
+      "name": "agent-prompt-conversation-summarization",
+      "category": "claude",
+      "description": "System prompt for creating detailed conversation summaries",
+      "path": "skills/claude/agent-prompt-conversation-summarization.md"
+    },
+    {
+      "name": "agent-prompt-determine-which-memory-files-to-attach",
+      "category": "claude",
+      "description": "Agent for determining which memory files to attach for the main agent.",
+      "path": "skills/claude/agent-prompt-determine-which-memory-files-to-attach.md"
+    },
+    {
+      "name": "agent-prompt-dream-memory-consolidation",
+      "category": "claude",
+      "description": "Instructs an agent to perform a multi-phase memory consolidation pass \u2014 orienting on existing memories, gathering recent signal from logs and transcripts, merging updates into topic files, and pruning the index",
+      "path": "skills/claude/agent-prompt-dream-memory-consolidation.md"
+    },
+    {
+      "name": "agent-prompt-dream-memory-pruning",
+      "category": "claude",
+      "description": "Instructs an agent to perform a memory pruning pass by deleting stale or invalidated memory files and collapsing duplicates in the memory directory",
+      "path": "skills/claude/agent-prompt-dream-memory-pruning.md"
+    },
+    {
+      "name": "agent-prompt-explore",
+      "category": "claude",
+      "description": "System prompt for the Explore subagent",
+      "path": "skills/claude/agent-prompt-explore.md"
+    },
+    {
+      "name": "agent-prompt-general-purpose",
+      "category": "claude",
+      "description": "System prompt for the general-purpose subagent that searches, analyzes, and edits code across a codebase while reporting findings concisely to the caller",
+      "path": "skills/claude/agent-prompt-general-purpose.md"
+    },
+    {
+      "name": "agent-prompt-hook-condition-evaluator-stop",
+      "category": "claude",
+      "description": "System prompt for evaluating hook conditions, specifically stop conditions, in Claude Code",
+      "path": "skills/claude/agent-prompt-hook-condition-evaluator-stop.md"
+    },
+    {
+      "name": "agent-prompt-managed-agents-onboarding-flow",
+      "category": "claude",
+      "description": "Interactive interview script that walks users through configuring a Managed Agent from scratch \u2014 selecting tools, skills, files, environment settings \u2014 and emits setup and runtime code",
+      "path": "skills/claude/agent-prompt-managed-agents-onboarding-flow.md"
+    },
+    {
+      "name": "agent-prompt-memory-synthesis",
+      "category": "claude",
+      "description": "Subagent that reads persistent memory files and returns a JSON synthesis of only the information relevant to each query, with cited filenames",
+      "path": "skills/claude/agent-prompt-memory-synthesis.md"
+    },
+    {
+      "name": "agent-prompt-onboarding-guide-draft-share-link-workflow",
+      "category": "claude",
+      "description": "Adds instructions for sharing the draft ONBOARDING.md before review, then updating the same ShareOnboardingGuide link after the user answers the review questions",
+      "path": "skills/claude/agent-prompt-onboarding-guide-draft-share-link-workflow.md"
+    },
+    {
+      "name": "agent-prompt-onboarding-guide-generator",
+      "category": "claude",
+      "description": "Co-authors a team onboarding guide (ONBOARDING.md) for new Claude Code users by analyzing the creator's usage data, classifying session types, and iterating on the draft collaboratively",
+      "path": "skills/claude/agent-prompt-onboarding-guide-generator.md"
+    },
+    {
+      "name": "agent-prompt-plan-mode-enhanced",
+      "category": "claude",
+      "description": "Enhanced prompt for the Plan subagent",
+      "path": "skills/claude/agent-prompt-plan-mode-enhanced.md"
+    },
+    {
+      "name": "agent-prompt-prompt-suggestion-generator-v2",
+      "category": "claude",
+      "description": "V2 instructions for generating prompt suggestions for Claude Code",
+      "path": "skills/claude/agent-prompt-prompt-suggestion-generator-v2.md"
+    },
+    {
+      "name": "agent-prompt-quick-git-commit",
+      "category": "claude",
+      "description": "Streamlined prompt for creating a single git commit with pre-populated context",
+      "path": "skills/claude/agent-prompt-quick-git-commit.md"
+    },
+    {
+      "name": "agent-prompt-quick-pr-creation",
+      "category": "claude",
+      "description": "Streamlined prompt for creating a commit and pull request with pre-populated context",
+      "path": "skills/claude/agent-prompt-quick-pr-creation.md"
+    },
+    {
+      "name": "agent-prompt-recent-message-summarization",
+      "category": "claude",
+      "description": "Agent prompt used for summarizing recent messages.",
+      "path": "skills/claude/agent-prompt-recent-message-summarization.md"
+    },
+    {
+      "name": "agent-prompt-rename-auto-generate-session-name",
+      "category": "claude",
+      "description": "Prompt used by /rename (no args) to auto-generate a kebab-case session name from conversation context",
+      "path": "skills/claude/agent-prompt-rename-auto-generate-session-name.md"
+    },
+    {
+      "name": "agent-prompt-review-pr-slash-command",
+      "category": "claude",
+      "description": "System prompt for reviewing GitHub pull requests with code analysis",
+      "path": "skills/claude/agent-prompt-review-pr-slash-command.md"
+    },
+    {
+      "name": "agent-prompt-schedule-slash-command",
+      "category": "claude",
+      "description": "Guides the user through scheduling, updating, listing, or running remote Claude Code agents on cron triggers via the Anthropic cloud API",
+      "path": "skills/claude/agent-prompt-schedule-slash-command.md"
+    },
+    {
+      "name": "agent-prompt-security-monitor-for-autonomous-agent-actions-first-part",
+      "category": "claude",
+      "description": "Instructs Claude to act as a security monitor that evaluates autonomous coding agent actions against block/allow rules to prevent prompt injection, scope creep, and accidental damage",
+      "path": "skills/claude/agent-prompt-security-monitor-for-autonomous-agent-actions-first-part.md"
+    },
+    {
+      "name": "agent-prompt-security-monitor-for-autonomous-agent-actions-second-part",
+      "category": "claude",
+      "description": "Defines the environment context, block rules, and allow exceptions that govern which tool actions the agent may or may not perform",
+      "path": "skills/claude/agent-prompt-security-monitor-for-autonomous-agent-actions-second-part.md"
+    },
+    {
+      "name": "agent-prompt-security-review-slash-command",
+      "category": "claude",
+      "description": "Comprehensive security review prompt for analyzing code changes with focus on exploitable vulnerabilities",
+      "path": "skills/claude/agent-prompt-security-review-slash-command.md"
+    },
+    {
+      "name": "agent-prompt-session-search",
+      "category": "claude",
+      "description": "Subagent prompt for searching past Claude Code conversation sessions by scanning .jsonl transcript files and returning matching session IDs",
+      "path": "skills/claude/agent-prompt-session-search.md"
+    },
+    {
+      "name": "agent-prompt-session-title-and-branch-generation",
+      "category": "claude",
+      "description": "Agent for generating succinct session titles and git branch names",
+      "path": "skills/claude/agent-prompt-session-title-and-branch-generation.md"
+    },
+    {
+      "name": "agent-prompt-simplify-slash-command",
+      "category": "claude",
+      "description": "Instructions for the /simplify slash command that reviews changed code for reuse, simplification, efficiency, and altitude cleanups, then applies the fixes",
+      "path": "skills/claude/agent-prompt-simplify-slash-command.md"
+    },
+    {
+      "name": "agent-prompt-status-line-setup",
+      "category": "claude",
+      "description": "System prompt for the statusline-setup agent that configures status line display",
+      "path": "skills/claude/agent-prompt-status-line-setup.md"
+    },
+    {
+      "name": "agent-prompt-webfetch-summarizer",
+      "category": "claude",
+      "description": "Prompt for agent that summarizes verbose output from WebFetch for the main model",
+      "path": "skills/claude/agent-prompt-webfetch-summarizer.md"
+    },
+    {
+      "name": "agent-prompt-worker-fork",
+      "category": "claude",
+      "description": "System prompt for a forked worker sub-agent that executes a single directive from the parent agent and reports back concisely",
+      "path": "skills/claude/agent-prompt-worker-fork.md"
+    },
+    {
+      "name": "agent-prompt-workflow-subagent-plain-text-output",
+      "category": "claude",
+      "description": "Instructs an internal workflow subagent to return its final text verbatim as the calling workflow script's parsed result",
+      "path": "skills/claude/agent-prompt-workflow-subagent-plain-text-output.md"
+    },
+    {
+      "name": "agent-prompt-workflow-subagent-structured-output",
+      "category": "claude",
+      "description": "Instructs an internal workflow subagent to return its final answer by calling the StructuredOutput tool exactly once with schema-valid input",
+      "path": "skills/claude/agent-prompt-workflow-subagent-structured-output.md"
+    },
+    {
+      "name": "data-anthropic-cli",
+      "category": "claude",
+      "description": "Reference documentation for the ant CLI covering installation, authentication, command structure, input and output shaping, managed agents workflows, and scripting patterns",
+      "path": "skills/claude/data-anthropic-cli.md"
+    },
+    {
+      "name": "data-assistant-voice-and-values-template",
+      "category": "claude",
+      "description": "Template content for an assistant.md file describing Claude's voice, values, and communication style",
+      "path": "skills/claude/data-assistant-voice-and-values-template.md"
+    },
+    {
+      "name": "data-claude-api-reference-c",
+      "category": "claude",
+      "description": "C# SDK reference including installation, client initialization, basic requests, streaming, and tool use",
+      "path": "skills/claude/data-claude-api-reference-c.md"
+    },
+    {
+      "name": "data-claude-api-reference-curl",
+      "category": "claude",
+      "description": "Raw API reference for Claude API for use with cURL or else Raw HTTP",
+      "path": "skills/claude/data-claude-api-reference-curl.md"
+    },
+    {
+      "name": "data-claude-api-reference-go",
+      "category": "claude",
+      "description": "Go SDK reference",
+      "path": "skills/claude/data-claude-api-reference-go.md"
+    },
+    {
+      "name": "data-claude-api-reference-java",
+      "category": "claude",
+      "description": "Java SDK reference including installation, client initialization, basic requests, streaming, and beta tool use",
+      "path": "skills/claude/data-claude-api-reference-java.md"
+    },
+    {
+      "name": "data-claude-api-reference-php",
+      "category": "claude",
+      "description": "PHP SDK reference",
+      "path": "skills/claude/data-claude-api-reference-php.md"
+    },
+    {
+      "name": "data-claude-api-reference-python",
+      "category": "claude",
+      "description": "Python SDK reference including installation, client initialization, basic requests, thinking, and multi-turn conversation",
+      "path": "skills/claude/data-claude-api-reference-python.md"
+    },
+    {
+      "name": "data-claude-api-reference-ruby",
+      "category": "claude",
+      "description": "Ruby SDK reference including installation, client initialization, basic requests, streaming, and beta tool runner",
+      "path": "skills/claude/data-claude-api-reference-ruby.md"
+    },
+    {
+      "name": "data-claude-api-reference-typescript",
+      "category": "claude",
+      "description": "TypeScript SDK reference including installation, client initialization, basic requests, thinking, and multi-turn conversation",
+      "path": "skills/claude/data-claude-api-reference-typescript.md"
+    },
+    {
+      "name": "data-claude-code-live-documentation-sources",
+      "category": "claude",
+      "description": "WebFetch URLs for fetching current Claude Code documentation from official sources",
+      "path": "skills/claude/data-claude-code-live-documentation-sources.md"
+    },
+    {
+      "name": "data-claude-code-recent-changes-reference",
+      "category": "claude",
+      "description": "Reference mapping of recently removed or renamed Claude Code commands, flags, and terms to their current replacements",
+      "path": "skills/claude/data-claude-code-recent-changes-reference.md"
+    },
+    {
+      "name": "data-claude-model-catalog",
+      "category": "claude",
+      "description": "Catalog of current and legacy Claude models with exact model IDs, aliases, context windows, and pricing",
+      "path": "skills/claude/data-claude-model-catalog.md"
+    },
+    {
+      "name": "data-claude-platform-on-aws-reference",
+      "category": "claude",
+      "description": "Reference documentation for using the Claude Developer Platform through AWS infrastructure, including AnthropicAWS clients, required region and workspace configuration, SigV4 authentication, and short-term API keys",
+      "path": "skills/claude/data-claude-platform-on-aws-reference.md"
+    },
+    {
+      "name": "data-cowork-plugin-component-schemas",
+      "category": "claude",
+      "description": "Reference documentation for Cowork plugin component formats, including skills, agents, hooks, MCP servers, legacy commands, CONNECTORS.md, and README.md",
+      "path": "skills/claude/data-cowork-plugin-component-schemas.md"
+    },
+    {
+      "name": "data-cowork-plugin-examples",
+      "category": "claude",
+      "description": "Reference examples of minimal, medium, and complex Cowork plugin structures with plugin metadata, skills, agents, hooks, MCP config, README, and connectors",
+      "path": "skills/claude/data-cowork-plugin-examples.md"
+    },
+    {
+      "name": "data-cowork-plugin-mcp-discovery-and-connection",
+      "category": "claude",
+      "description": "Reference guidance for finding MCP connectors during plugin customization, using search and suggestion tools, mapping categories to keywords, and writing .mcp.json entries",
+      "path": "skills/claude/data-cowork-plugin-mcp-discovery-and-connection.md"
+    },
+    {
+      "name": "data-files-api-reference-python",
+      "category": "claude",
+      "description": "Python Files API reference including file upload, listing, deletion, and usage in messages",
+      "path": "skills/claude/data-files-api-reference-python.md"
+    },
+    {
+      "name": "data-files-api-reference-typescript",
+      "category": "claude",
+      "description": "TypeScript Files API reference including file upload, listing, deletion, and usage in messages",
+      "path": "skills/claude/data-files-api-reference-typescript.md"
+    },
+    {
+      "name": "data-github-actions-workflow-for-claude-mentions",
+      "category": "claude",
+      "description": "GitHub Actions workflow template for triggering Claude Code via @claude mentions",
+      "path": "skills/claude/data-github-actions-workflow-for-claude-mentions.md"
+    },
+    {
+      "name": "data-github-app-installation-pr-description",
+      "category": "claude",
+      "description": "Template for PR description when installing Claude Code GitHub App integration",
+      "path": "skills/claude/data-github-app-installation-pr-description.md"
+    },
+    {
+      "name": "data-http-error-codes-reference",
+      "category": "claude",
+      "description": "Reference for HTTP error codes returned by the Claude API with common causes and handling strategies",
+      "path": "skills/claude/data-http-error-codes-reference.md"
+    },
+    {
+      "name": "data-knowledge-mcp-search-strategies",
+      "category": "claude",
+      "description": "Reference query patterns for using knowledge MCPs to discover organization-specific tool names, project identifiers, team names, and workflow details during plugin customization",
+      "path": "skills/claude/data-knowledge-mcp-search-strategies.md"
+    },
+    {
+      "name": "data-live-documentation-sources",
+      "category": "claude",
+      "description": "WebFetch URLs for fetching current Claude API and Agent SDK documentation from official sources",
+      "path": "skills/claude/data-live-documentation-sources.md"
+    },
+    {
+      "name": "data-managed-agents-client-patterns",
+      "category": "claude",
+      "description": "Reference guide of common client-side patterns for driving Managed Agent sessions, including stream reconnection, idle-break gating, tool confirmations, interrupts, and custom tools",
+      "path": "skills/claude/data-managed-agents-client-patterns.md"
+    },
+    {
+      "name": "data-managed-agents-core-concepts",
+      "category": "claude",
+      "description": "Reference documentation for the Managed Agents API covering core concepts (Agents, Sessions, Environments, Containers), lifecycle, versioning, endpoints, and usage patterns",
+      "path": "skills/claude/data-managed-agents-core-concepts.md"
+    },
+    {
+      "name": "data-managed-agents-endpoint-reference",
+      "category": "claude",
+      "description": "Comprehensive reference for Managed Agents API endpoints, SDK methods, request/response schemas, error handling, and rate limits",
+      "path": "skills/claude/data-managed-agents-endpoint-reference.md"
+    },
+    {
+      "name": "data-managed-agents-environments-and-resources",
+      "category": "claude",
+      "description": "Reference documentation covering Managed Agents environments, file resources, GitHub repository mounting, and the Files API with SDK examples",
+      "path": "skills/claude/data-managed-agents-environments-and-resources.md"
+    },
+    {
+      "name": "data-managed-agents-events-and-steering",
+      "category": "claude",
+      "description": "Reference guide for sending and receiving events on managed agent sessions, including streaming, polling, reconnection, message queuing, interrupts, and event payload details",
+      "path": "skills/claude/data-managed-agents-events-and-steering.md"
+    },
+    {
+      "name": "data-managed-agents-memory-stores-reference",
+      "category": "claude",
+      "description": "Reference documentation for Managed Agents memory stores, including store creation, session attachment, FUSE mounts, memory CRUD, concurrency, versions, redaction, and endpoint paths",
+      "path": "skills/claude/data-managed-agents-memory-stores-reference.md"
+    },
+    {
+      "name": "data-managed-agents-multiagent-sessions",
+      "category": "claude",
+      "description": "Reference documentation for Managed Agents multiagent sessions, including coordinator rosters, threads, session stream events, subagent tool permissions, and pitfalls",
+      "path": "skills/claude/data-managed-agents-multiagent-sessions.md"
+    },
+    {
+      "name": "data-managed-agents-outcomes",
+      "category": "claude",
+      "description": "Reference documentation for Managed Agents outcomes, including user.define_outcome events, rubrics, outcome evaluation events, deliverables, and interaction rules",
+      "path": "skills/claude/data-managed-agents-outcomes.md"
+    },
+    {
+      "name": "data-managed-agents-overview",
+      "category": "claude",
+      "description": "Provides the agent with a comprehensive overview of the Managed Agents API architecture, mandatory agent-then-session flow, beta headers, documentation reading guide, and common pitfalls",
+      "path": "skills/claude/data-managed-agents-overview.md"
+    },
+    {
+      "name": "data-managed-agents-reference-curl",
+      "category": "claude",
+      "description": "Provides cURL and raw HTTP request examples for the Managed Agents API including environment, agent, and session lifecycle operations",
+      "path": "skills/claude/data-managed-agents-reference-curl.md"
+    },
+    {
+      "name": "data-managed-agents-reference-python",
+      "category": "claude",
+      "description": "Reference guide for using the Anthropic Python SDK to create and manage agents, sessions, environments, streaming, custom tools, files, and MCP servers",
+      "path": "skills/claude/data-managed-agents-reference-python.md"
+    },
+    {
+      "name": "data-managed-agents-reference-typescript",
+      "category": "claude",
+      "description": "Reference guide for using the Anthropic TypeScript SDK to create and manage agents, sessions, environments, streaming, custom tools, file uploads, and MCP server integration",
+      "path": "skills/claude/data-managed-agents-reference-typescript.md"
+    },
+    {
+      "name": "data-managed-agents-self-hosted-sandboxes",
+      "category": "claude",
+      "description": "Reference documentation for running Managed Agents tool execution in self-hosted infrastructure, including environment setup, workers, webhook-driven wake, orchestration, monitoring, credentials, and security responsibilities",
+      "path": "skills/claude/data-managed-agents-self-hosted-sandboxes.md"
+    },
+    {
+      "name": "data-managed-agents-tools-and-skills",
+      "category": "claude",
+      "description": "Reference documentation covering the Managed Agents SDK's tool types (agent toolset, MCP, custom), permission policies, vault credential management, and skills API for building specialized agents",
+      "path": "skills/claude/data-managed-agents-tools-and-skills.md"
+    },
+    {
+      "name": "data-managed-agents-webhooks",
+      "category": "claude",
+      "description": "Reference documentation for Managed Agents webhooks, including endpoint registration, signature verification, payload envelopes, supported event types, delivery behavior, and pitfalls",
+      "path": "skills/claude/data-managed-agents-webhooks.md"
+    },
+    {
+      "name": "data-message-batches-api-reference-python",
+      "category": "claude",
+      "description": "Python Batches API reference including batch creation, status polling, and result retrieval at 50% cost",
+      "path": "skills/claude/data-message-batches-api-reference-python.md"
+    },
+    {
+      "name": "data-prompt-caching-design-optimization",
+      "category": "claude",
+      "description": "Document on how to design prompt-building code for effective caching, including placement patterns and anti-patterns.",
+      "path": "skills/claude/data-prompt-caching-design-optimization.md"
+    },
+    {
+      "name": "data-streaming-reference-python",
+      "category": "claude",
+      "description": "Python streaming reference including sync/async streaming and handling different content types",
+      "path": "skills/claude/data-streaming-reference-python.md"
+    },
+    {
+      "name": "data-streaming-reference-typescript",
+      "category": "claude",
+      "description": "TypeScript streaming reference including basic streaming and handling different content types",
+      "path": "skills/claude/data-streaming-reference-typescript.md"
+    },
+    {
+      "name": "data-token-counting-reference",
+      "category": "claude",
+      "description": "Reference documentation for counting Claude model tokens with the Messages count_tokens endpoint and Anthropic SDK or CLI examples, including warnings against OpenAI tokenizers",
+      "path": "skills/claude/data-token-counting-reference.md"
+    },
+    {
+      "name": "data-tool-use-concepts",
+      "category": "claude",
+      "description": "Conceptual foundations of tool use with the Claude API including tool definitions, tool choice, and best practices",
+      "path": "skills/claude/data-tool-use-concepts.md"
+    },
+    {
+      "name": "data-tool-use-reference-python",
+      "category": "claude",
+      "description": "Python tool use reference including tool runner, manual agentic loop, code execution, and structured outputs",
+      "path": "skills/claude/data-tool-use-reference-python.md"
+    },
+    {
+      "name": "data-tool-use-reference-typescript",
+      "category": "claude",
+      "description": "TypeScript tool use reference including tool runner, manual agentic loop, code execution, and structured outputs",
+      "path": "skills/claude/data-tool-use-reference-typescript.md"
+    },
+    {
+      "name": "data-user-profile-memory-template",
+      "category": "claude",
+      "description": "Template content for the user profile memory file, covering personal details, work context, schedule, and communication preferences",
+      "path": "skills/claude/data-user-profile-memory-template.md"
+    },
+    {
+      "name": "skill-agent-design-patterns",
+      "category": "claude",
+      "description": "Reference guide covering decision heuristics for building agents on the Claude API, including tool surface design, context management, caching strategies, and composing tool calls",
+      "path": "skills/claude/skill-agent-design-patterns.md"
+    },
+    {
+      "name": "skill-build-with-claude-api-reference-guide",
+      "category": "claude",
+      "description": "Template for presenting language-specific reference documentation with quick task navigation",
+      "path": "skills/claude/skill-build-with-claude-api-reference-guide.md"
+    },
+    {
+      "name": "skill-building-llm-powered-applications-with-claude",
+      "category": "claude",
+      "description": "Guides Claude in building LLM-powered applications using the Anthropic SDK, covering language detection, API surface selection (Claude API vs Managed Agents), model defaults, thinking/effort configuration, and language-specific documentation reading",
+      "path": "skills/claude/skill-building-llm-powered-applications-with-claude.md"
+    },
+    {
+      "name": "skill-catch-up-periodic-heartbeat",
+      "category": "claude",
+      "description": "Skill definition for the /catch-up periodic heartbeat that scans current priorities, triages actionable changes, reports a short digest, and updates catch-up state",
+      "path": "skills/claude/skill-catch-up-periodic-heartbeat.md"
+    },
+    {
+      "name": "skill-claude-code-configuration-guide",
+      "category": "claude",
+      "description": "Skill instructions for answering Claude Code configuration questions by checking the running build, bundled references, and current documentation",
+      "path": "skills/claude/skill-claude-code-configuration-guide.md"
+    },
+    {
+      "name": "skill-computer-use-mcp",
+      "category": "claude",
+      "description": "Instructions for using computer-use MCP tools including tool selection tiers, app access tiers, link safety, and financial action restrictions",
+      "path": "skills/claude/skill-computer-use-mcp.md"
+    },
+    {
+      "name": "skill-cowork-plugin-authoring",
+      "category": "claude",
+      "description": "Skill instructions for creating or customizing Cowork plugins, including mode selection, research, implementation, packaging, connector replacement, and plugin delivery",
+      "path": "skills/claude/skill-cowork-plugin-authoring.md"
+    },
+    {
+      "name": "skill-create-verifier-skills",
+      "category": "claude",
+      "description": "Prompt for creating verifier skills for the Verify agent to automatically verify code changes",
+      "path": "skills/claude/skill-create-verifier-skills.md"
+    },
+    {
+      "name": "skill-debugging",
+      "category": "claude",
+      "description": "Instructions for debugging an issue that the user is encountering in the Claude Code session",
+      "path": "skills/claude/skill-debugging.md"
+    },
+    {
+      "name": "skill-design-sync-package-source-shape",
+      "category": "claude",
+      "description": "Shape-specific /design-sync instructions for syncing a React design system from a built package without Storybook",
+      "path": "skills/claude/skill-design-sync-package-source-shape.md"
+    },
+    {
+      "name": "skill-design-sync-slash-command",
+      "category": "claude",
+      "description": "Skill definition for syncing a React design system to claude.ai/design, including project selection, source-shape detection, converter configuration, validation, upload planning, and self-check behavior",
+      "path": "skills/claude/skill-design-sync-slash-command.md"
+    },
+    {
+      "name": "skill-design-sync-storybook-source-shape",
+      "category": "claude",
+      "description": "Shape-specific /design-sync instructions for syncing a React design system from Storybook output, including build steps, converter configuration, validation fixes, and DesignSync upload",
+      "path": "skills/claude/skill-design-sync-storybook-source-shape.md"
+    },
+    {
+      "name": "skill-dream-memory-consolidation",
+      "category": "claude",
+      "description": "Skill definition for the /dream nightly housekeeping job that consolidates recent logs and transcripts into persistent memory topics, learnings, and a pruned MEMORY.md index",
+      "path": "skills/claude/skill-dream-memory-consolidation.md"
+    },
+    {
+      "name": "skill-dynamic-pacing-loop-execution",
+      "category": "claude",
+      "description": "Step-by-step instructions for executing a dynamic pacing loop that runs tasks, arms persistent monitors for event-gated waits, schedules fallback heartbeat ticks, and handles task notifications",
+      "path": "skills/claude/skill-dynamic-pacing-loop-execution.md"
+    },
+    {
+      "name": "skill-generate-permission-allowlist-from-transcripts",
+      "category": "claude",
+      "description": "Analyzes session transcripts to extract frequently used read-only tool-call patterns and adds them to the project's .claude/settings.json permission allowlist to reduce permission prompts",
+      "path": "skills/claude/skill-generate-permission-allowlist-from-transcripts.md"
+    },
+    {
+      "name": "skill-init-claudemd-and-skill-setup-new-version",
+      "category": "claude",
+      "description": "A comprehensive onboarding flow for setting up CLAUDE.md and related skills/hooks in the current repository, including codebase exploration, user interviews, and iterative proposal refinement.",
+      "path": "skills/claude/skill-init-claudemd-and-skill-setup-new-version.md"
+    },
+    {
+      "name": "skill-insights-report-output",
+      "category": "claude",
+      "description": "Formats and displays the insights usage report results after the user runs the /insights slash command",
+      "path": "skills/claude/skill-insights-report-output.md"
+    },
+    {
+      "name": "skill-loop-cloud-first-scheduling-offer",
+      "category": "claude",
+      "description": "Decision tree for offering cloud-based scheduling before falling back to local session loops in the /loop command",
+      "path": "skills/claude/skill-loop-cloud-first-scheduling-offer.md"
+    },
+    {
+      "name": "skill-loop-self-pacing-mode",
+      "category": "claude",
+      "description": "Instructs Claude how to self-pace a recurring loop by arming event monitors as primary wake signals and scheduling fallback heartbeat delays between iterations",
+      "path": "skills/claude/skill-loop-self-pacing-mode.md"
+    },
+    {
+      "name": "skill-loop-slash-command",
+      "category": "claude",
+      "description": "Parses user input into an interval and prompt, converts the interval to a cron expression, and schedules a recurring task",
+      "path": "skills/claude/skill-loop-slash-command.md"
+    },
+    {
+      "name": "skill-loop-slash-command-dynamic-mode",
+      "category": "claude",
+      "description": "Parses user input into an interval and prompt for scheduling recurring or dynamically self-paced loop executions",
+      "path": "skills/claude/skill-loop-slash-command-dynamic-mode.md"
+    },
+    {
+      "name": "skill-model-migration-guide",
+      "category": "claude",
+      "description": "Step-by-step instructions for migrating existing code to newer Claude models, covering breaking changes, deprecated parameters, per-SDK syntax, prompt-behavior shifts, and migration checklists",
+      "path": "skills/claude/skill-model-migration-guide.md"
+    },
+    {
+      "name": "skill-morning-checkin-daily-brief",
+      "category": "claude",
+      "description": "Skill definition for the /morning-checkin scheduled task that prepares a daily calendar and inbox digest, schedules pre-meeting check-ins, and records the day\u2019s top priority",
+      "path": "skills/claude/skill-morning-checkin-daily-brief.md"
+    },
+    {
+      "name": "skill-pre-meeting-checkin-event-brief",
+      "category": "claude",
+      "description": "Skill definition for the /pre-meeting-checkin task that gathers event materials, recent thread context, open questions, and a concise meeting brief",
+      "path": "skills/claude/skill-pre-meeting-checkin-event-brief.md"
+    },
+    {
+      "name": "skill-run-app",
+      "category": "claude",
+      "description": "Skill for launching and driving the current project's app through its real runtime surface using project-specific run skills or fallback patterns",
+      "path": "skills/claude/skill-run-app.md"
+    },
+    {
+      "name": "skill-run-browser-driven-web-app-example",
+      "category": "claude",
+      "description": "Example file for the Run app skill showing how to start a web dev server, drive it with chromium-cli, capture screenshots, and document app-specific gotchas",
+      "path": "skills/claude/skill-run-browser-driven-web-app-example.md"
+    },
+    {
+      "name": "skill-run-cli-tool-example",
+      "category": "claude",
+      "description": "Example file for the Run app skill showing how to document building, invoking, and testing a CLI tool",
+      "path": "skills/claude/skill-run-cli-tool-example.md"
+    },
+    {
+      "name": "skill-run-electron-desktop-gui-app-example",
+      "category": "claude",
+      "description": "Example file for the Run app skill showing how to launch an Electron desktop app under xvfb and drive it through a Playwright REPL driver",
+      "path": "skills/claude/skill-run-electron-desktop-gui-app-example.md"
+    },
+    {
+      "name": "skill-run-library-sdk-example",
+      "category": "claude",
+      "description": "Example file for the Run app skill showing how to document building, testing, and smoke-checking a library or SDK at its public package boundary",
+      "path": "skills/claude/skill-run-library-sdk-example.md"
+    },
+    {
+      "name": "skill-run-skill-generator",
+      "category": "claude",
+      "description": "Skill for authoring or improving a project-specific run skill that documents verified build, launch, runtime driving, and troubleshooting steps",
+      "path": "skills/claude/skill-run-skill-generator.md"
+    },
+    {
+      "name": "skill-run-skill-template",
+      "category": "claude",
+      "description": "Template file for the Run skill generator showing the frontmatter and section structure for a project-specific run skill",
+      "path": "skills/claude/skill-run-skill-template.md"
+    },
+    {
+      "name": "skill-run-tui-interactive-terminal-app-example",
+      "category": "claude",
+      "description": "Example file for the Run app skill showing how to drive an interactive terminal app with tmux, readiness polling, pane capture, key references, and cleanup",
+      "path": "skills/claude/skill-run-tui-interactive-terminal-app-example.md"
+    },
+    {
+      "name": "skill-run-web-server-api-example",
+      "category": "claude",
+      "description": "Example file for the Run app skill showing how to document a server or API lifecycle with background launch, readiness checks, curl verification, and shutdown",
+      "path": "skills/claude/skill-run-web-server-api-example.md"
+    },
+    {
+      "name": "skill-schedule-recurring-cron-and-execute-immediately-compact",
+      "category": "claude",
+      "description": "Instructions for creating a recurring cron job, confirming the schedule with the user, and immediately executing the parsed prompt without waiting for the first cron fire",
+      "path": "skills/claude/skill-schedule-recurring-cron-and-execute-immediately-compact.md"
+    },
+    {
+      "name": "skill-schedule-recurring-cron-and-run-immediately",
+      "category": "claude",
+      "description": "Converts an interval to a cron expression, schedules a recurring task via the cron creation tool, confirms to the user, and immediately executes the task without waiting for the first cron fire",
+      "path": "skills/claude/skill-schedule-recurring-cron-and-run-immediately.md"
+    },
+    {
+      "name": "skill-stuck-slash-command",
+      "category": "claude",
+      "description": "Diagnozse frozen or slow Claude Code sessions",
+      "path": "skills/claude/skill-stuck-slash-command.md"
+    },
+    {
+      "name": "skill-team-onboarding-guide",
+      "category": "claude",
+      "description": "Template for onboarding a new teammate to a team's Claude Code setup, walking them through usage stats, setup checklists, MCP servers, skills, and team tips in a warm conversational style",
+      "path": "skills/claude/skill-team-onboarding-guide.md"
+    },
+    {
+      "name": "skill-update-claude-code-config",
+      "category": "claude",
+      "description": "Skill for modifying Claude Code configuration file (settings.json).",
+      "path": "skills/claude/skill-update-claude-code-config.md"
+    },
+    {
+      "name": "skill-update-config-7-step-verification-flow",
+      "category": "claude",
+      "description": "A skill that guides Claude through a 7-step process to construct and verify hooks for Claude Code, ensuring they work correctly in the user's specific project environment.",
+      "path": "skills/claude/skill-update-config-7-step-verification-flow.md"
+    },
+    {
+      "name": "skill-verify-cli-changes-example-for-verify-skill",
+      "category": "claude",
+      "description": "Example workflow for verifying a CLI change, as part of the Verify skill.",
+      "path": "skills/claude/skill-verify-cli-changes-example-for-verify-skill.md"
+    },
+    {
+      "name": "skill-verify-serverapi-changes-example-for-verify-skill",
+      "category": "claude",
+      "description": "Example workflow for verifying a server/API change, as part of the Verify skill.",
+      "path": "skills/claude/skill-verify-serverapi-changes-example-for-verify-skill.md"
+    },
+    {
+      "name": "skill-verify-skill",
+      "category": "claude",
+      "description": "Skill for opinionated verification workflow for validating code changes.",
+      "path": "skills/claude/skill-verify-skill.md"
+    },
+    {
+      "name": "system-prompt-action-safety-and-truthful-reporting",
+      "category": "claude",
+      "description": "Requires confirmation for irreversible or outward-facing actions, checking targets before destructive edits, and truthful reporting of outcomes",
+      "path": "skills/claude/system-prompt-action-safety-and-truthful-reporting.md"
+    },
+    {
+      "name": "system-prompt-advisor-tool-instructions",
+      "category": "claude",
+      "description": "Instructions for using the Advisor tool",
+      "path": "skills/claude/system-prompt-advisor-tool-instructions.md"
+    },
+    {
+      "name": "system-prompt-agent-memory-instructions",
+      "category": "claude",
+      "description": "Instructions for including memory update guidance in agent system prompts",
+      "path": "skills/claude/system-prompt-agent-memory-instructions.md"
+    },
+    {
+      "name": "system-prompt-agent-summary-generation",
+      "category": "claude",
+      "description": "System prompt used for \"Agent Summary\" generation.",
+      "path": "skills/claude/system-prompt-agent-summary-generation.md"
+    },
+    {
+      "name": "system-prompt-agent-thread-notes",
+      "category": "claude",
+      "description": "Behavioral guidelines for agent threads covering absolute paths, response formatting, emoji avoidance, and tool call punctuation",
+      "path": "skills/claude/system-prompt-agent-thread-notes.md"
+    },
+    {
+      "name": "system-prompt-auto-mode",
+      "category": "claude",
+      "description": "Continuous task execution, akin to a background agent.",
+      "path": "skills/claude/system-prompt-auto-mode.md"
+    },
+    {
+      "name": "system-prompt-autonomous-loop-check",
+      "category": "claude",
+      "description": "Defines behavior for autonomous timer-based invocations, guiding Claude to continue established work, maintain PRs, and handle repeated idle checks while the user is away",
+      "path": "skills/claude/system-prompt-autonomous-loop-check.md"
+    },
+    {
+      "name": "system-prompt-autonomous-loop-persistence-guidance-claude_code_loop_persistent",
+      "category": "claude",
+      "description": "Defines behavior for autonomous timer-based invocations, guiding Claude to persistently continue established work, maintain PRs, and broaden scope before stopping while the user is away",
+      "path": "skills/claude/system-prompt-autonomous-loop-persistence-guidance-claude_code_loop_persistent.md"
+    },
+    {
+      "name": "system-prompt-avoiding-unnecessary-sleep-commands-part-of-powershell-tool-description",
+      "category": "claude",
+      "description": "Guidelines for avoiding unnecessary sleep commands in PowerShell scripts, including alternatives for waiting and notification",
+      "path": "skills/claude/system-prompt-avoiding-unnecessary-sleep-commands-part-of-powershell-tool-description.md"
+    },
+    {
+      "name": "system-prompt-background-session-instructions",
+      "category": "claude",
+      "description": "Instructions for background job sessions to use the job-specific temporary directory and follow the appropriate worktree isolation guidance",
+      "path": "skills/claude/system-prompt-background-session-instructions.md"
+    },
+    {
+      "name": "system-prompt-censoring-assistance-with-malicious-activities",
+      "category": "claude",
+      "description": "Guidelines for assisting with authorized security testing, defensive security, CTF challenges, and educational contexts while censoring requests for malicious activities",
+      "path": "skills/claude/system-prompt-censoring-assistance-with-malicious-activities.md"
+    },
+    {
+      "name": "system-prompt-chrome-browser-mcp-tools",
+      "category": "claude",
+      "description": "Instructions for loading Chrome browser MCP tools via MCPSearch before use",
+      "path": "skills/claude/system-prompt-chrome-browser-mcp-tools.md"
+    },
+    {
+      "name": "system-prompt-claude-in-chrome-browser-automation",
+      "category": "claude",
+      "description": "Instructions for using Claude in Chrome browser automation tools effectively",
+      "path": "skills/claude/system-prompt-claude-in-chrome-browser-automation.md"
+    },
+    {
+      "name": "system-prompt-comment-what-and-task-context-avoidance",
+      "category": "claude",
+      "description": "Instructs Claude not to write comments that explain what code does or reference transient task context",
+      "path": "skills/claude/system-prompt-comment-what-and-task-context-avoidance.md"
+    },
+    {
+      "name": "system-prompt-comment-why-only-guidance",
+      "category": "claude",
+      "description": "Instructs Claude to write code comments only when the reason is non-obvious and useful to future readers",
+      "path": "skills/claude/system-prompt-comment-why-only-guidance.md"
+    },
+    {
+      "name": "system-prompt-communication-style",
+      "category": "claude",
+      "description": "Instructs Claude to give brief, user-facing updates at key moments during tool use, write concise end-of-turn summaries, match response format to task complexity, and avoid comments and planning documents in code",
+      "path": "skills/claude/system-prompt-communication-style.md"
+    },
+    {
+      "name": "system-prompt-context-compaction-summary",
+      "category": "claude",
+      "description": "Prompt used for context compaction summary (for the SDK)",
+      "path": "skills/claude/system-prompt-context-compaction-summary.md"
+    },
+    {
+      "name": "system-prompt-coordinator-mode-orchestration",
+      "category": "claude",
+      "description": "Provides coordinator-mode instructions for delegating work to worker agents, managing worker lifecycle, handling cross-session peers, and verifying delegated results",
+      "path": "skills/claude/system-prompt-coordinator-mode-orchestration.md"
+    },
+    {
+      "name": "system-prompt-coordinator-worker-instructions",
+      "category": "claude",
+      "description": "Instructions for worker agents executing coordinator-assigned tasks, covering scope control, concurrent branch changes, resumption, failure handling, and coordinator-facing output.",
+      "path": "skills/claude/system-prompt-coordinator-worker-instructions.md"
+    },
+    {
+      "name": "system-prompt-description-part-of-memory-instructions",
+      "category": "claude",
+      "description": "Field for describing _what_ the memory is.  Part of a bigger effort to instruct Claude how to create memories.",
+      "path": "skills/claude/system-prompt-description-part-of-memory-instructions.md"
+    },
+    {
+      "name": "system-prompt-doing-tasks-ambitious-tasks",
+      "category": "claude",
+      "description": "Allow users to complete ambitious tasks; defer to user judgement on scope",
+      "path": "skills/claude/system-prompt-doing-tasks-ambitious-tasks.md"
+    },
+    {
+      "name": "system-prompt-doing-tasks-help-and-feedback",
+      "category": "claude",
+      "description": "How to inform users about help and feedback channels",
+      "path": "skills/claude/system-prompt-doing-tasks-help-and-feedback.md"
+    },
+    {
+      "name": "system-prompt-doing-tasks-no-compatibility-hacks",
+      "category": "claude",
+      "description": "Delete unused code completely rather than adding compatibility shims",
+      "path": "skills/claude/system-prompt-doing-tasks-no-compatibility-hacks.md"
+    },
+    {
+      "name": "system-prompt-doing-tasks-no-unnecessary-additions",
+      "category": "claude",
+      "description": "Do not add features, refactor, or improve beyond what was asked",
+      "path": "skills/claude/system-prompt-doing-tasks-no-unnecessary-additions.md"
+    },
+    {
+      "name": "system-prompt-doing-tasks-no-unnecessary-error-handling",
+      "category": "claude",
+      "description": "Do not add error handling for impossible scenarios; only validate at boundaries",
+      "path": "skills/claude/system-prompt-doing-tasks-no-unnecessary-error-handling.md"
+    },
+    {
+      "name": "system-prompt-doing-tasks-security",
+      "category": "claude",
+      "description": "Avoid introducing security vulnerabilities like injection, XSS, etc.",
+      "path": "skills/claude/system-prompt-doing-tasks-security.md"
+    },
+    {
+      "name": "system-prompt-doing-tasks-software-engineering-focus",
+      "category": "claude",
+      "description": "Users primarily request software engineering tasks; interpret instructions in that context",
+      "path": "skills/claude/system-prompt-doing-tasks-software-engineering-focus.md"
+    },
+    {
+      "name": "system-prompt-dream-claudemd-memory-reconciliation",
+      "category": "claude",
+      "description": "Instructs dream memory consolidation to reconcile feedback and project memories against CLAUDE.md, deleting stale memories or flagging possible CLAUDE.md drift",
+      "path": "skills/claude/system-prompt-dream-claudemd-memory-reconciliation.md"
+    },
+    {
+      "name": "system-prompt-dream-team-memory-handling",
+      "category": "claude",
+      "description": "Instructions for handling shared team memories during dream consolidation, including deduplication, conservative pruning rules, and avoiding accidental promotion of personal memories",
+      "path": "skills/claude/system-prompt-dream-team-memory-handling.md"
+    },
+    {
+      "name": "system-prompt-emoji-avoidance",
+      "category": "claude",
+      "description": "Instructs Claude to avoid using emojis unless the user explicitly asks for them",
+      "path": "skills/claude/system-prompt-emoji-avoidance.md"
+    },
+    {
+      "name": "system-prompt-executing-actions-with-care",
+      "category": "claude",
+      "description": "Instructions for executing actions carefully.",
+      "path": "skills/claude/system-prompt-executing-actions-with-care.md"
+    },
+    {
+      "name": "system-prompt-exploratory-questions-analyze-before-implementing",
+      "category": "claude",
+      "description": "Instructs Claude to respond to open-ended questions with analysis, options, and tradeoffs instead of jumping to implementation, waiting for user agreement before writing code",
+      "path": "skills/claude/system-prompt-exploratory-questions-analyze-before-implementing.md"
+    },
+    {
+      "name": "system-prompt-fork-usage-guidelines",
+      "category": "claude",
+      "description": "Instructions for when to fork subagents and rules against reading fork output mid-flight or fabricating fork results",
+      "path": "skills/claude/system-prompt-fork-usage-guidelines.md"
+    },
+    {
+      "name": "system-prompt-frontend-browser-verification",
+      "category": "claude",
+      "description": "Requires Claude to start the dev server and verify UI or frontend changes in a browser before reporting completion",
+      "path": "skills/claude/system-prompt-frontend-browser-verification.md"
+    },
+    {
+      "name": "system-prompt-git-status",
+      "category": "claude",
+      "description": "System prompt for displaying the current git status at the start of the conversation",
+      "path": "skills/claude/system-prompt-git-status.md"
+    },
+    {
+      "name": "system-prompt-harness-instructions",
+      "category": "claude",
+      "description": "Core interactive-agent identity and harness instructions for terminal markdown output, permissions, system reminders, compaction, tool use, and code references",
+      "path": "skills/claude/system-prompt-harness-instructions.md"
+    },
+    {
+      "name": "system-prompt-hooks-configuration",
+      "category": "claude",
+      "description": "System prompt for hooks configuration.  Used for above Claude Code config skill.",
+      "path": "skills/claude/system-prompt-hooks-configuration.md"
+    },
+    {
+      "name": "system-prompt-how-to-use-the-sendusermessage-tool",
+      "category": "claude",
+      "description": "Instructions for using the SendUserMessage tool",
+      "path": "skills/claude/system-prompt-how-to-use-the-sendusermessage-tool.md"
+    },
+    {
+      "name": "system-prompt-insights-at-a-glance-summary",
+      "category": "claude",
+      "description": "Generates a concise 4-part summary (what's working, hindrances, quick wins, ambitious workflows) for the insights report",
+      "path": "skills/claude/system-prompt-insights-at-a-glance-summary.md"
+    },
+    {
+      "name": "system-prompt-insights-friction-analysis",
+      "category": "claude",
+      "description": "Analyzes aggregated usage data to identify friction patterns and categorize recurring issues",
+      "path": "skills/claude/system-prompt-insights-friction-analysis.md"
+    },
+    {
+      "name": "system-prompt-insights-on-the-horizon",
+      "category": "claude",
+      "description": "Identifies ambitious future workflows and opportunities for autonomous AI-assisted development",
+      "path": "skills/claude/system-prompt-insights-on-the-horizon.md"
+    },
+    {
+      "name": "system-prompt-insights-session-facets-extraction",
+      "category": "claude",
+      "description": "Extracts structured facets (goal categories, satisfaction, friction) from a single Claude Code session transcript",
+      "path": "skills/claude/system-prompt-insights-session-facets-extraction.md"
+    },
+    {
+      "name": "system-prompt-insights-suggestions",
+      "category": "claude",
+      "description": "Generates actionable suggestions including CLAUDE.md additions, features to try, and usage patterns",
+      "path": "skills/claude/system-prompt-insights-suggestions.md"
+    },
+    {
+      "name": "system-prompt-learning-mode",
+      "category": "claude",
+      "description": "Main system prompt for learning mode with human collaboration instructions",
+      "path": "skills/claude/system-prompt-learning-mode.md"
+    },
+    {
+      "name": "system-prompt-learning-mode-insights",
+      "category": "claude",
+      "description": "Instructions for providing educational insights when learning mode is active",
+      "path": "skills/claude/system-prompt-learning-mode-insights.md"
+    },
+    {
+      "name": "system-prompt-memory-description-of-user-details",
+      "category": "claude",
+      "description": "Describes the purpose and guidelines for per-user memory files that accumulate details about the user's role, goals, knowledge, and preferences across sessions",
+      "path": "skills/claude/system-prompt-memory-description-of-user-details.md"
+    },
+    {
+      "name": "system-prompt-memory-description-of-user-feedback",
+      "category": "claude",
+      "description": "Describes the user feedback memory type that stores guidance about work approaches, emphasizing recording both successes and failures and checking for contradictions with team memories",
+      "path": "skills/claude/system-prompt-memory-description-of-user-feedback.md"
+    },
+    {
+      "name": "system-prompt-memory-description-of-user-feedback-with-explicit-save",
+      "category": "claude",
+      "description": "Describes the feedback memory type that captures user guidance on work approaches, emphasizing recording both successes and failures and explicitly instructing to save a new memory noting contradictions with team feedback",
+      "path": "skills/claude/system-prompt-memory-description-of-user-feedback-with-explicit-save.md"
+    },
+    {
+      "name": "system-prompt-memory-instructions",
+      "category": "claude",
+      "description": "Instructions for using persistent file-based memory, including memory file format, scope, indexing, and stale-memory handling",
+      "path": "skills/claude/system-prompt-memory-instructions.md"
+    },
+    {
+      "name": "system-prompt-memory-save-exclusions",
+      "category": "claude",
+      "description": "Lists categories of information that should not be saved in memory, even when the user asks",
+      "path": "skills/claude/system-prompt-memory-save-exclusions.md"
+    },
+    {
+      "name": "system-prompt-memory-staleness-verification",
+      "category": "claude",
+      "description": "Instructs the agent to verify memory records against current file/resource state and delete stale memories that conflict with observed reality",
+      "path": "skills/claude/system-prompt-memory-staleness-verification.md"
+    },
+    {
+      "name": "system-prompt-minimal-mode",
+      "category": "claude",
+      "description": "Describes the behavior and constraints of minimal mode, which skips hooks, LSP, plugins, auto-memory, and other features while requiring explicit context via CLI flags",
+      "path": "skills/claude/system-prompt-minimal-mode.md"
+    },
+    {
+      "name": "system-prompt-one-of-six-rules-for-using-sleep-command",
+      "category": "claude",
+      "description": "One of the six rules for using the sleep command.",
+      "path": "skills/claude/system-prompt-one-of-six-rules-for-using-sleep-command.md"
+    },
+    {
+      "name": "system-prompt-option-previewer",
+      "category": "claude",
+      "description": "System prompt for previewing UI options in a side-by-side layout",
+      "path": "skills/claude/system-prompt-option-previewer.md"
+    },
+    {
+      "name": "system-prompt-outcome-first-communication-style",
+      "category": "claude",
+      "description": "Instructs Claude to keep user-facing updates readable and outcome-first, answer directly after work completes, match response format to task complexity, and limit code comments to non-obvious constraints",
+      "path": "skills/claude/system-prompt-outcome-first-communication-style.md"
+    },
+    {
+      "name": "system-prompt-parallel-tool-call-note-part-of-tool-usage-policy",
+      "category": "claude",
+      "description": "System prompt for telling Claude to using parallel tool calls",
+      "path": "skills/claude/system-prompt-parallel-tool-call-note-part-of-tool-usage-policy.md"
+    },
+    {
+      "name": "system-prompt-partial-compaction-instructions",
+      "category": "claude",
+      "description": "Instructions on how to compact when the user decided to compact only a portion of the conversation, with a structured summary format and analysis process",
+      "path": "skills/claude/system-prompt-partial-compaction-instructions.md"
+    },
+    {
+      "name": "system-prompt-phase-four-of-plan-mode",
+      "category": "claude",
+      "description": "Phase four of plan mode.",
+      "path": "skills/claude/system-prompt-phase-four-of-plan-mode.md"
+    },
+    {
+      "name": "system-prompt-powershell-edition-for-51",
+      "category": "claude",
+      "description": "System prompt for providing information about Windows PowerShell 5.1",
+      "path": "skills/claude/system-prompt-powershell-edition-for-51.md"
+    },
+    {
+      "name": "system-prompt-prefer-editing-existing-files",
+      "category": "claude",
+      "description": "Instructs Claude to prefer editing existing files instead of creating new ones",
+      "path": "skills/claude/system-prompt-prefer-editing-existing-files.md"
+    },
+    {
+      "name": "system-prompt-proactive-schedule-offer-after-natural-future-follow-up",
+      "category": "claude",
+      "description": "Instructs the agent to offer a one-line /schedule follow-up after completed work when there is a likely one-time or recurring future action",
+      "path": "skills/claude/system-prompt-proactive-schedule-offer-after-natural-future-follow-up.md"
+    },
+    {
+      "name": "system-prompt-remote-plan-mode-ultraplan",
+      "category": "claude",
+      "description": "System reminder injected during remote planning sessions that instructs Claude to explore the codebase, produce a diagram-rich plan via ExitPlanMode, and implement it with a pull request upon approval",
+      "path": "skills/claude/system-prompt-remote-plan-mode-ultraplan.md"
+    },
+    {
+      "name": "system-prompt-remote-planning-session",
+      "category": "claude",
+      "description": "System reminder that configures a remote planning session to explore the codebase, produce an implementation plan via ExitPlanMode, and handle plan approval, rejection, or teleportation back to the user's local terminal",
+      "path": "skills/claude/system-prompt-remote-planning-session.md"
+    },
+    {
+      "name": "system-prompt-repl-tool-usage-and-scripting-conventions",
+      "category": "claude",
+      "description": "Instructs Claude on how to use the REPL tool effectively with dense JavaScript scripts, shorthands, batching rules, and API reference for investigation tasks",
+      "path": "skills/claude/system-prompt-repl-tool-usage-and-scripting-conventions.md"
+    },
+    {
+      "name": "system-prompt-scratchpad-directory",
+      "category": "claude",
+      "description": "Instructions for using a dedicated scratchpad directory for temporary files",
+      "path": "skills/claude/system-prompt-scratchpad-directory.md"
+    },
+    {
+      "name": "system-prompt-skillify-current-session",
+      "category": "claude",
+      "description": "System prompt for converting the current session in to a skill.",
+      "path": "skills/claude/system-prompt-skillify-current-session.md"
+    },
+    {
+      "name": "system-prompt-strict-proactive-schedule-offer-gate",
+      "category": "claude",
+      "description": "Restricts proactive /schedule offers to completed work with a named future obligation artifact, concrete timing, and no in-session follow-up available",
+      "path": "skills/claude/system-prompt-strict-proactive-schedule-offer-gate.md"
+    },
+    {
+      "name": "system-prompt-subagent-delegation-examples",
+      "category": "claude",
+      "description": "Provides example interactions showing how a coordinator agent should delegate tasks to subagents, handle waiting states, and report results",
+      "path": "skills/claude/system-prompt-subagent-delegation-examples.md"
+    },
+    {
+      "name": "system-prompt-subagent-prompt-writing-examples",
+      "category": "claude",
+      "description": "Provides example usage patterns demonstrating how to write self-contained, well-structured prompts when delegating tasks to subagents",
+      "path": "skills/claude/system-prompt-subagent-prompt-writing-examples.md"
+    },
+    {
+      "name": "system-prompt-tone-and-style-code-references",
+      "category": "claude",
+      "description": "Instruction to include file_path:line_number when referencing code",
+      "path": "skills/claude/system-prompt-tone-and-style-code-references.md"
+    },
+    {
+      "name": "system-prompt-tone-and-style-concise-output-short",
+      "category": "claude",
+      "description": "Instruction for short and concise responses",
+      "path": "skills/claude/system-prompt-tone-and-style-concise-output-short.md"
+    },
+    {
+      "name": "system-prompt-tool-call-colon-avoidance",
+      "category": "claude",
+      "description": "Instructs Claude not to use a colon before tool calls because tool calls may be hidden from user output",
+      "path": "skills/claude/system-prompt-tool-call-colon-avoidance.md"
+    },
+    {
+      "name": "system-prompt-tool-execution-denied",
+      "category": "claude",
+      "description": "System prompt for when tool execution is denied",
+      "path": "skills/claude/system-prompt-tool-execution-denied.md"
+    },
+    {
+      "name": "system-prompt-tool-usage-subagent-guidance",
+      "category": "claude",
+      "description": "Guidance on when and how to use subagents effectively",
+      "path": "skills/claude/system-prompt-tool-usage-subagent-guidance.md"
+    },
+    {
+      "name": "system-prompt-tool-usage-task-management",
+      "category": "claude",
+      "description": "Use TodoWrite to break down and track work progress",
+      "path": "skills/claude/system-prompt-tool-usage-task-management.md"
+    },
+    {
+      "name": "system-prompt-worker-instructions",
+      "category": "claude",
+      "description": "Instructions for workers to follow when implementing a change",
+      "path": "skills/claude/system-prompt-worker-instructions.md"
+    },
+    {
+      "name": "system-prompt-writing-subagent-prompts",
+      "category": "claude",
+      "description": "Guidelines for writing effective prompts when delegating tasks to subagents, covering context-inheriting vs fresh subagent scenarios",
+      "path": "skills/claude/system-prompt-writing-subagent-prompts.md"
+    },
+    {
+      "name": "system-prompt-wsl-managed-settings-double-opt-in",
+      "category": "claude",
+      "description": "Explains that WSL can read the Windows managed settings policy chain only when the admin-enabled flag is set, with HKCU requiring an additional user opt-in",
+      "path": "skills/claude/system-prompt-wsl-managed-settings-double-opt-in.md"
+    },
+    {
+      "name": "system-reminder-agent-mention",
+      "category": "claude",
+      "description": "Notification that user wants to invoke an agent",
+      "path": "skills/claude/system-reminder-agent-mention.md"
+    },
+    {
+      "name": "system-reminder-btw-side-question",
+      "category": "claude",
+      "description": "System reminder for /btw slash command side questions without tools",
+      "path": "skills/claude/system-reminder-btw-side-question.md"
+    },
+    {
+      "name": "system-reminder-compact-file-reference",
+      "category": "claude",
+      "description": "Reference to file read before conversation summarization",
+      "path": "skills/claude/system-reminder-compact-file-reference.md"
+    },
+    {
+      "name": "system-reminder-exited-plan-mode",
+      "category": "claude",
+      "description": "Notification when exiting plan mode",
+      "path": "skills/claude/system-reminder-exited-plan-mode.md"
+    },
+    {
+      "name": "system-reminder-file-exists-but-empty",
+      "category": "claude",
+      "description": "Warning when reading an empty file",
+      "path": "skills/claude/system-reminder-file-exists-but-empty.md"
+    },
+    {
+      "name": "system-reminder-file-modification-detected-budget-exceeded",
+      "category": "claude",
+      "description": "System reminder for when a file modification is detected - specifically when other modified files in the turn already exceeded the budget.",
+      "path": "skills/claude/system-reminder-file-modification-detected-budget-exceeded.md"
+    },
+    {
+      "name": "system-reminder-file-modified-by-user-or-linter",
+      "category": "claude",
+      "description": "Notification that a file was modified externally",
+      "path": "skills/claude/system-reminder-file-modified-by-user-or-linter.md"
+    },
+    {
+      "name": "system-reminder-file-opened-in-ide",
+      "category": "claude",
+      "description": "Notification that user opened a file in IDE",
+      "path": "skills/claude/system-reminder-file-opened-in-ide.md"
+    },
+    {
+      "name": "system-reminder-file-shorter-than-offset",
+      "category": "claude",
+      "description": "Warning when file read offset exceeds file length",
+      "path": "skills/claude/system-reminder-file-shorter-than-offset.md"
+    },
+    {
+      "name": "system-reminder-file-truncated",
+      "category": "claude",
+      "description": "Notification that file was truncated due to size",
+      "path": "skills/claude/system-reminder-file-truncated.md"
+    },
+    {
+      "name": "system-reminder-hook-additional-context",
+      "category": "claude",
+      "description": "Additional context from a hook",
+      "path": "skills/claude/system-reminder-hook-additional-context.md"
+    },
+    {
+      "name": "system-reminder-hook-blocking-error",
+      "category": "claude",
+      "description": "Error from a blocking hook command",
+      "path": "skills/claude/system-reminder-hook-blocking-error.md"
+    },
+    {
+      "name": "system-reminder-hook-stopped-continuation",
+      "category": "claude",
+      "description": "Message when a hook stops continuation",
+      "path": "skills/claude/system-reminder-hook-stopped-continuation.md"
+    },
+    {
+      "name": "system-reminder-hook-stopped-continuation-prefix",
+      "category": "claude",
+      "description": "Prefix for hook stopped continuation messages",
+      "path": "skills/claude/system-reminder-hook-stopped-continuation-prefix.md"
+    },
+    {
+      "name": "system-reminder-hook-success",
+      "category": "claude",
+      "description": "Success message from a hook",
+      "path": "skills/claude/system-reminder-hook-success.md"
+    },
+    {
+      "name": "system-reminder-lines-selected-in-ide",
+      "category": "claude",
+      "description": "Notification about lines selected by user in IDE",
+      "path": "skills/claude/system-reminder-lines-selected-in-ide.md"
+    },
+    {
+      "name": "system-reminder-mcp-resource-no-content",
+      "category": "claude",
+      "description": "Shown when MCP resource has no content",
+      "path": "skills/claude/system-reminder-mcp-resource-no-content.md"
+    },
+    {
+      "name": "system-reminder-mcp-resource-no-displayable-content",
+      "category": "claude",
+      "description": "Shown when MCP resource has no displayable content",
+      "path": "skills/claude/system-reminder-mcp-resource-no-displayable-content.md"
+    },
+    {
+      "name": "system-reminder-memory-file-contents",
+      "category": "claude",
+      "description": "Contents of a memory file by path",
+      "path": "skills/claude/system-reminder-memory-file-contents.md"
+    },
+    {
+      "name": "system-reminder-nested-memory-contents",
+      "category": "claude",
+      "description": "Contents of a nested memory file",
+      "path": "skills/claude/system-reminder-nested-memory-contents.md"
+    },
+    {
+      "name": "system-reminder-new-diagnostics-detected",
+      "category": "claude",
+      "description": "Notification about new diagnostic issues",
+      "path": "skills/claude/system-reminder-new-diagnostics-detected.md"
+    },
+    {
+      "name": "system-reminder-output-style-active",
+      "category": "claude",
+      "description": "Notification that an output style is active",
+      "path": "skills/claude/system-reminder-output-style-active.md"
+    },
+    {
+      "name": "system-reminder-plan-file-reference",
+      "category": "claude",
+      "description": "Reference to an existing plan file",
+      "path": "skills/claude/system-reminder-plan-file-reference.md"
+    },
+    {
+      "name": "system-reminder-plan-mode-approval-tool-enforcement",
+      "category": "claude",
+      "description": "Requires plan mode turns to end with either AskUserQuestion for clarification or ExitPlanMode for plan approval, and forbids asking for approval any other way",
+      "path": "skills/claude/system-reminder-plan-mode-approval-tool-enforcement.md"
+    },
+    {
+      "name": "system-reminder-plan-mode-is-active-5-phase",
+      "category": "claude",
+      "description": "Enhanced plan mode system reminder with parallel exploration and multi-agent planning",
+      "path": "skills/claude/system-reminder-plan-mode-is-active-5-phase.md"
+    },
+    {
+      "name": "system-reminder-plan-mode-is-active-subagent",
+      "category": "claude",
+      "description": "Simplified plan mode system reminder for sub agents",
+      "path": "skills/claude/system-reminder-plan-mode-is-active-subagent.md"
+    },
+    {
+      "name": "system-reminder-plan-mode-re-entry",
+      "category": "claude",
+      "description": "System reminder sent when the user enters Plan mode after having previously exited it either via shift+tab or by approving Claude's plan.",
+      "path": "skills/claude/system-reminder-plan-mode-re-entry.md"
+    },
+    {
+      "name": "system-reminder-previously-invoked-skills",
+      "category": "claude",
+      "description": "Restores skills invoked before conversation compaction as context only, warning not to re-execute their setup actions or treat prior inputs as current instructions",
+      "path": "skills/claude/system-reminder-previously-invoked-skills.md"
+    },
+    {
+      "name": "system-reminder-session-continuation",
+      "category": "claude",
+      "description": "Notification that session continues from another machine",
+      "path": "skills/claude/system-reminder-session-continuation.md"
+    },
+    {
+      "name": "system-reminder-stop-hook-blocking-error",
+      "category": "claude",
+      "description": "Error from a blocking hook command",
+      "path": "skills/claude/system-reminder-stop-hook-blocking-error.md"
+    },
+    {
+      "name": "system-reminder-task-tools-reminder",
+      "category": "claude",
+      "description": "Reminder to use task tracking tools",
+      "path": "skills/claude/system-reminder-task-tools-reminder.md"
+    },
+    {
+      "name": "system-reminder-team-coordination",
+      "category": "claude",
+      "description": "System reminder for team coordination",
+      "path": "skills/claude/system-reminder-team-coordination.md"
+    },
+    {
+      "name": "system-reminder-team-shutdown",
+      "category": "claude",
+      "description": "System reminder for team shutdown",
+      "path": "skills/claude/system-reminder-team-shutdown.md"
+    },
+    {
+      "name": "system-reminder-todowrite-reminder",
+      "category": "claude",
+      "description": "Reminder to use TodoWrite tool for task tracking",
+      "path": "skills/claude/system-reminder-todowrite-reminder.md"
+    },
+    {
+      "name": "system-reminder-token-usage",
+      "category": "claude",
+      "description": "Current token usage statistics",
+      "path": "skills/claude/system-reminder-token-usage.md"
+    },
+    {
+      "name": "system-reminder-ultraplan-mode",
+      "category": "claude",
+      "description": "System reminder for using Ultraplan mode to create a detailed implementation plan with multi-agent exploration and critique.",
+      "path": "skills/claude/system-reminder-ultraplan-mode.md"
+    },
+    {
+      "name": "system-reminder-usd-budget",
+      "category": "claude",
+      "description": "Current USD budget statistics",
+      "path": "skills/claude/system-reminder-usd-budget.md"
+    },
+    {
+      "name": "system-reminder-verify-plan-reminder",
+      "category": "claude",
+      "description": "Reminder to verify completed plan",
+      "path": "skills/claude/system-reminder-verify-plan-reminder.md"
+    },
+    {
+      "name": "tool-description-agent-simple-usage-notes",
+      "category": "claude",
+      "description": "Simplified usage notes for the Agent tool, including when to delegate, fork behavior, resumption, worktree isolation, background execution, parallel launches, and context restrictions",
+      "path": "skills/claude/tool-description-agent-simple-usage-notes.md"
+    },
+    {
+      "name": "tool-description-agent-usage-notes",
+      "category": "claude",
+      "description": "Usage notes and instructions for the Task/Agent tool, including guidance on launching subagents, background execution, resumption, and worktree isolation",
+      "path": "skills/claude/tool-description-agent-usage-notes.md"
+    },
+    {
+      "name": "tool-description-askuserquestion",
+      "category": "claude",
+      "description": "Tool description for asking user questions.",
+      "path": "skills/claude/tool-description-askuserquestion.md"
+    },
+    {
+      "name": "tool-description-askuserquestion-preview-field",
+      "category": "claude",
+      "description": "Instructions for using the HTML preview field on single-select question options to display visual artifacts like UI mockups, code snippets, and diagrams",
+      "path": "skills/claude/tool-description-askuserquestion-preview-field.md"
+    },
+    {
+      "name": "tool-description-background-monitor-streaming-events",
+      "category": "claude",
+      "description": "Describes the background monitor tool that streams stdout events from long-running scripts as chat notifications, with guidelines on script quality, output volume, and selective filtering",
+      "path": "skills/claude/tool-description-background-monitor-streaming-events.md"
+    },
+    {
+      "name": "tool-description-bash-alternative-communication",
+      "category": "claude",
+      "description": "Bash tool alternative: output text directly instead of echo/printf",
+      "path": "skills/claude/tool-description-bash-alternative-communication.md"
+    },
+    {
+      "name": "tool-description-bash-alternative-content-search",
+      "category": "claude",
+      "description": "Bash tool alternative: use Grep for content search instead of grep/rg",
+      "path": "skills/claude/tool-description-bash-alternative-content-search.md"
+    },
+    {
+      "name": "tool-description-bash-alternative-edit-files",
+      "category": "claude",
+      "description": "Bash tool alternative: use Edit for file editing instead of sed/awk",
+      "path": "skills/claude/tool-description-bash-alternative-edit-files.md"
+    },
+    {
+      "name": "tool-description-bash-alternative-file-search",
+      "category": "claude",
+      "description": "Bash tool alternative: use Glob for file search instead of find/ls",
+      "path": "skills/claude/tool-description-bash-alternative-file-search.md"
+    },
+    {
+      "name": "tool-description-bash-alternative-read-files",
+      "category": "claude",
+      "description": "Bash tool alternative: use Read for file reading instead of cat/head/tail",
+      "path": "skills/claude/tool-description-bash-alternative-read-files.md"
+    },
+    {
+      "name": "tool-description-bash-alternative-write-files",
+      "category": "claude",
+      "description": "Bash tool alternative: use Write for file writing instead of echo/cat",
+      "path": "skills/claude/tool-description-bash-alternative-write-files.md"
+    },
+    {
+      "name": "tool-description-bash-built-in-tools-note",
+      "category": "claude",
+      "description": "Note that built-in tools provide better UX than Bash equivalents",
+      "path": "skills/claude/tool-description-bash-built-in-tools-note.md"
+    },
+    {
+      "name": "tool-description-bash-git-avoid-destructive-ops",
+      "category": "claude",
+      "description": "Bash tool git instruction: consider safer alternatives to destructive operations",
+      "path": "skills/claude/tool-description-bash-git-avoid-destructive-ops.md"
+    },
+    {
+      "name": "tool-description-bash-git-commit-and-pr-creation-instructions",
+      "category": "claude",
+      "description": "Instructions for creating git commits and GitHub pull requests",
+      "path": "skills/claude/tool-description-bash-git-commit-and-pr-creation-instructions.md"
+    },
+    {
+      "name": "tool-description-bash-git-never-skip-hooks",
+      "category": "claude",
+      "description": "Bash tool git instruction: never skip hooks or bypass signing unless user requests it",
+      "path": "skills/claude/tool-description-bash-git-never-skip-hooks.md"
+    },
+    {
+      "name": "tool-description-bash-git-prefer-new-commits",
+      "category": "claude",
+      "description": "Bash tool git instruction: prefer new commits over amending",
+      "path": "skills/claude/tool-description-bash-git-prefer-new-commits.md"
+    },
+    {
+      "name": "tool-description-bash-maintain-cwd",
+      "category": "claude",
+      "description": "Bash tool instruction: use absolute paths and avoid cd",
+      "path": "skills/claude/tool-description-bash-maintain-cwd.md"
+    },
+    {
+      "name": "tool-description-bash-no-newlines",
+      "category": "claude",
+      "description": "Bash tool instruction: do not use newlines to separate commands",
+      "path": "skills/claude/tool-description-bash-no-newlines.md"
+    },
+    {
+      "name": "tool-description-bash-overview",
+      "category": "claude",
+      "description": "Opening line of the Bash tool description",
+      "path": "skills/claude/tool-description-bash-overview.md"
+    },
+    {
+      "name": "tool-description-bash-parallel-commands",
+      "category": "claude",
+      "description": "Bash tool instruction: run independent commands as parallel tool calls",
+      "path": "skills/claude/tool-description-bash-parallel-commands.md"
+    },
+    {
+      "name": "tool-description-bash-prefer-dedicated-tools",
+      "category": "claude",
+      "description": "Warning to prefer dedicated tools over Bash for find, grep, cat, etc.",
+      "path": "skills/claude/tool-description-bash-prefer-dedicated-tools.md"
+    },
+    {
+      "name": "tool-description-bash-prefer-dedicated-tools-bullet",
+      "category": "claude",
+      "description": "Bulleted warning to prefer dedicated tools over Bash for find, grep, cat, etc.",
+      "path": "skills/claude/tool-description-bash-prefer-dedicated-tools-bullet.md"
+    },
+    {
+      "name": "tool-description-bash-quote-file-paths",
+      "category": "claude",
+      "description": "Bash tool instruction: quote file paths containing spaces",
+      "path": "skills/claude/tool-description-bash-quote-file-paths.md"
+    },
+    {
+      "name": "tool-description-bash-sandbox-adjust-settings",
+      "category": "claude",
+      "description": "Work with user to adjust sandbox settings on failure",
+      "path": "skills/claude/tool-description-bash-sandbox-adjust-settings.md"
+    },
+    {
+      "name": "tool-description-bash-sandbox-default-to-sandbox",
+      "category": "claude",
+      "description": "Default to sandbox; only bypass when user asks or evidence of sandbox restriction",
+      "path": "skills/claude/tool-description-bash-sandbox-default-to-sandbox.md"
+    },
+    {
+      "name": "tool-description-bash-sandbox-evidence-access-denied",
+      "category": "claude",
+      "description": "Sandbox evidence: access denied to paths outside allowed directories",
+      "path": "skills/claude/tool-description-bash-sandbox-evidence-access-denied.md"
+    },
+    {
+      "name": "tool-description-bash-sandbox-evidence-list-header",
+      "category": "claude",
+      "description": "Header for list of sandbox-caused failure evidence",
+      "path": "skills/claude/tool-description-bash-sandbox-evidence-list-header.md"
+    },
+    {
+      "name": "tool-description-bash-sandbox-evidence-network-failures",
+      "category": "claude",
+      "description": "Sandbox evidence: network connection failures to non-whitelisted hosts",
+      "path": "skills/claude/tool-description-bash-sandbox-evidence-network-failures.md"
+    },
+    {
+      "name": "tool-description-bash-sandbox-evidence-operation-not-permitted",
+      "category": "claude",
+      "description": "Sandbox evidence: operation not permitted errors",
+      "path": "skills/claude/tool-description-bash-sandbox-evidence-operation-not-permitted.md"
+    },
+    {
+      "name": "tool-description-bash-sandbox-evidence-unix-socket-errors",
+      "category": "claude",
+      "description": "Sandbox evidence: unix socket connection errors",
+      "path": "skills/claude/tool-description-bash-sandbox-evidence-unix-socket-errors.md"
+    },
+    {
+      "name": "tool-description-bash-sandbox-explain-restriction",
+      "category": "claude",
+      "description": "Explain which sandbox restriction caused the failure",
+      "path": "skills/claude/tool-description-bash-sandbox-explain-restriction.md"
+    },
+    {
+      "name": "tool-description-bash-sandbox-failure-evidence-condition",
+      "category": "claude",
+      "description": "Condition: command failed with evidence of sandbox restrictions",
+      "path": "skills/claude/tool-description-bash-sandbox-failure-evidence-condition.md"
+    },
+    {
+      "name": "tool-description-bash-sandbox-mandatory-mode",
+      "category": "claude",
+      "description": "Policy: all commands must run in sandbox mode",
+      "path": "skills/claude/tool-description-bash-sandbox-mandatory-mode.md"
+    },
+    {
+      "name": "tool-description-bash-sandbox-no-exceptions",
+      "category": "claude",
+      "description": "Commands cannot run outside sandbox under any circumstances",
+      "path": "skills/claude/tool-description-bash-sandbox-no-exceptions.md"
+    },
+    {
+      "name": "tool-description-bash-sandbox-no-sensitive-paths",
+      "category": "claude",
+      "description": "Do not suggest adding sensitive paths to sandbox allowlist",
+      "path": "skills/claude/tool-description-bash-sandbox-no-sensitive-paths.md"
+    },
+    {
+      "name": "tool-description-bash-sandbox-per-command",
+      "category": "claude",
+      "description": "Treat each command individually; default to sandbox for future commands",
+      "path": "skills/claude/tool-description-bash-sandbox-per-command.md"
+    },
+    {
+      "name": "tool-description-bash-sandbox-response-header",
+      "category": "claude",
+      "description": "Header for how to respond when seeing sandbox-caused failures",
+      "path": "skills/claude/tool-description-bash-sandbox-response-header.md"
+    },
+    {
+      "name": "tool-description-bash-sandbox-retry-without-sandbox",
+      "category": "claude",
+      "description": "Immediately retry with dangerouslyDisableSandbox on sandbox failure",
+      "path": "skills/claude/tool-description-bash-sandbox-retry-without-sandbox.md"
+    },
+    {
+      "name": "tool-description-bash-sandbox-tmpdir",
+      "category": "claude",
+      "description": "Use $TMPDIR for temporary files in sandbox mode",
+      "path": "skills/claude/tool-description-bash-sandbox-tmpdir.md"
+    },
+    {
+      "name": "tool-description-bash-sandbox-user-permission-prompt",
+      "category": "claude",
+      "description": "Note that disabling sandbox will prompt user for permission",
+      "path": "skills/claude/tool-description-bash-sandbox-user-permission-prompt.md"
+    },
+    {
+      "name": "tool-description-bash-semicolon-usage",
+      "category": "claude",
+      "description": "Bash tool instruction: use semicolons when sequential order matters but failure does not",
+      "path": "skills/claude/tool-description-bash-semicolon-usage.md"
+    },
+    {
+      "name": "tool-description-bash-sequential-commands",
+      "category": "claude",
+      "description": "Bash tool instruction: chain dependent commands with &&",
+      "path": "skills/claude/tool-description-bash-sequential-commands.md"
+    },
+    {
+      "name": "tool-description-bash-sleep-keep-short",
+      "category": "claude",
+      "description": "Bash tool instruction: keep sleep duration to 1-5 seconds",
+      "path": "skills/claude/tool-description-bash-sleep-keep-short.md"
+    },
+    {
+      "name": "tool-description-bash-sleep-no-polling-background-tasks",
+      "category": "claude",
+      "description": "Bash tool instruction: do not poll background tasks, wait for notification",
+      "path": "skills/claude/tool-description-bash-sleep-no-polling-background-tasks.md"
+    },
+    {
+      "name": "tool-description-bash-sleep-run-immediately",
+      "category": "claude",
+      "description": "Bash tool instruction: do not sleep between commands that can run immediately",
+      "path": "skills/claude/tool-description-bash-sleep-run-immediately.md"
+    },
+    {
+      "name": "tool-description-bash-sleep-use-check-commands",
+      "category": "claude",
+      "description": "Bash tool instruction: use check commands rather than sleeping when polling",
+      "path": "skills/claude/tool-description-bash-sleep-use-check-commands.md"
+    },
+    {
+      "name": "tool-description-bash-timeout",
+      "category": "claude",
+      "description": "Bash tool instruction: optional timeout configuration",
+      "path": "skills/claude/tool-description-bash-timeout.md"
+    },
+    {
+      "name": "tool-description-bash-verify-parent-directory",
+      "category": "claude",
+      "description": "Bash tool instruction: verify parent directory before creating files",
+      "path": "skills/claude/tool-description-bash-verify-parent-directory.md"
+    },
+    {
+      "name": "tool-description-bash-working-directory",
+      "category": "claude",
+      "description": "Bash tool note about working directory persistence and shell state",
+      "path": "skills/claude/tool-description-bash-working-directory.md"
+    },
+    {
+      "name": "tool-description-browser-file-upload",
+      "category": "claude",
+      "description": "Describes the browser file upload tool, which uploads shared files directly to a page file input by element ref and enforces the 10 MB combined size limit",
+      "path": "skills/claude/tool-description-browser-file-upload.md"
+    },
+    {
+      "name": "tool-description-browserbatch",
+      "category": "claude",
+      "description": "Tool description for BrowserBatch, which executes multiple browser tool calls sequentially in one round trip",
+      "path": "skills/claude/tool-description-browserbatch.md"
+    },
+    {
+      "name": "tool-description-computer",
+      "category": "claude",
+      "description": "Main description for the Chrome browser computer automation tool",
+      "path": "skills/claude/tool-description-computer.md"
+    },
+    {
+      "name": "tool-description-croncreate",
+      "category": "claude",
+      "description": "Describes the CronCreate tool for enqueuing one-shot or recurring cron-based jobs with jitter and off-minute scheduling guidance",
+      "path": "skills/claude/tool-description-croncreate.md"
+    },
+    {
+      "name": "tool-description-designsync",
+      "category": "claude",
+      "description": "Describes the DesignSync tool for reading and updating claude.ai/design design-system projects, including project listing, plan finalization, file writes and deletes, and asset registration",
+      "path": "skills/claude/tool-description-designsync.md"
+    },
+    {
+      "name": "tool-description-edit",
+      "category": "claude",
+      "description": "Tool for performing exact string replacements in files",
+      "path": "skills/claude/tool-description-edit.md"
+    },
+    {
+      "name": "tool-description-enterplanmode",
+      "category": "claude",
+      "description": "Tool description for entering plan mode to explore and design implementation approaches",
+      "path": "skills/claude/tool-description-enterplanmode.md"
+    },
+    {
+      "name": "tool-description-enterworktree",
+      "category": "claude",
+      "description": "Tool description for the EnterWorktree tool.",
+      "path": "skills/claude/tool-description-enterworktree.md"
+    },
+    {
+      "name": "tool-description-exitplanmode",
+      "category": "claude",
+      "description": "Description for the ExitPlanMode tool, which presents a plan dialog for the user to approve",
+      "path": "skills/claude/tool-description-exitplanmode.md"
+    },
+    {
+      "name": "tool-description-exitworktree",
+      "category": "claude",
+      "description": "Roughly, the reverse of the ExitWorktree",
+      "path": "skills/claude/tool-description-exitworktree.md"
+    },
+    {
+      "name": "tool-description-grep",
+      "category": "claude",
+      "description": "Tool description for content search using ripgrep",
+      "path": "skills/claude/tool-description-grep.md"
+    },
+    {
+      "name": "tool-description-lsp",
+      "category": "claude",
+      "description": "Description for the LSP tool.",
+      "path": "skills/claude/tool-description-lsp.md"
+    },
+    {
+      "name": "tool-description-notebookedit",
+      "category": "claude",
+      "description": "Tool description for editing Jupyter notebook cells by replacing, inserting, or deleting a cell using cell IDs from the read tool",
+      "path": "skills/claude/tool-description-notebookedit.md"
+    },
+    {
+      "name": "tool-description-powershell",
+      "category": "claude",
+      "description": "Describes the PowerShell command execution tool with syntax guidance, timeout settings, and instructions to prefer specialized tools over PowerShell for file operations",
+      "path": "skills/claude/tool-description-powershell.md"
+    },
+    {
+      "name": "tool-description-pushnotification",
+      "category": "claude",
+      "description": "Tool description for PushNotification. This is a tool that sends a desktop notification in the user's terminal and pushes to their phone if Remote Control is connected.",
+      "path": "skills/claude/tool-description-pushnotification.md"
+    },
+    {
+      "name": "tool-description-readfile",
+      "category": "claude",
+      "description": "Tool description for reading files",
+      "path": "skills/claude/tool-description-readfile.md"
+    },
+    {
+      "name": "tool-description-remotetrigger-prompt",
+      "category": "claude",
+      "description": "Tool prompt for calling the claude.ai RemoteTrigger API to list, get, create, update, or run scheduled remote agent routines",
+      "path": "skills/claude/tool-description-remotetrigger-prompt.md"
+    },
+    {
+      "name": "tool-description-repl",
+      "category": "claude",
+      "description": "Describes the REPL tool, a JavaScript programming interface for looping, branching, and composing Claude Code tool calls as async functions",
+      "path": "skills/claude/tool-description-repl.md"
+    },
+    {
+      "name": "tool-description-request_teach_access-part-of-teach-mode",
+      "category": "claude",
+      "description": "Describes a tool that requests permission to guide the user through a task step-by-step using fullscreen tooltip overlays instead of direct access",
+      "path": "skills/claude/tool-description-request_teach_access-part-of-teach-mode.md"
+    },
+    {
+      "name": "tool-description-sendmessagetool",
+      "category": "claude",
+      "description": "Agent teams version of SendMessageTool.",
+      "path": "skills/claude/tool-description-sendmessagetool.md"
+    },
+    {
+      "name": "tool-description-sendmessagetool-non-agent-teams",
+      "category": "claude",
+      "description": "Send a message the user will read, describes this tool well.",
+      "path": "skills/claude/tool-description-sendmessagetool-non-agent-teams.md"
+    },
+    {
+      "name": "tool-description-senduserfile",
+      "category": "claude",
+      "description": "Describes the SendUserFile tool for surfacing generated deliverable files to the user, with optional captions and normal or proactive status",
+      "path": "skills/claude/tool-description-senduserfile.md"
+    },
+    {
+      "name": "tool-description-skill",
+      "category": "claude",
+      "description": "Tool description for executing skills in the main conversation",
+      "path": "skills/claude/tool-description-skill.md"
+    },
+    {
+      "name": "tool-description-snooze-delay-and-reason-guidance",
+      "category": "claude",
+      "description": "Extends the snooze tool description with guidance on choosing delaySeconds relative to the 5-minute prompt cache TTL and writing informative reason fields",
+      "path": "skills/claude/tool-description-snooze-delay-and-reason-guidance.md"
+    },
+    {
+      "name": "tool-description-taskcreate",
+      "category": "claude",
+      "description": "Tool description for TaskCreate tool",
+      "path": "skills/claude/tool-description-taskcreate.md"
+    },
+    {
+      "name": "tool-description-tasklist-teammate-workflow",
+      "category": "claude",
+      "description": "Conditional section appended to TaskList tool description",
+      "path": "skills/claude/tool-description-tasklist-teammate-workflow.md"
+    },
+    {
+      "name": "tool-description-teamdelete",
+      "category": "claude",
+      "description": "Tool description for the TeamDelete tool",
+      "path": "skills/claude/tool-description-teamdelete.md"
+    },
+    {
+      "name": "tool-description-teammatetool",
+      "category": "claude",
+      "description": "Tool for managing teams and coordinating teammates in a swarm",
+      "path": "skills/claude/tool-description-teammatetool.md"
+    },
+    {
+      "name": "tool-description-todowrite",
+      "category": "claude",
+      "description": "Tool description for creating and managing task lists",
+      "path": "skills/claude/tool-description-todowrite.md"
+    },
+    {
+      "name": "tool-description-toolsearch-second-part",
+      "category": "claude",
+      "description": "The bulk of the tool description.",
+      "path": "skills/claude/tool-description-toolsearch-second-part.md"
+    },
+    {
+      "name": "tool-description-webfetch",
+      "category": "claude",
+      "description": "Tool description for web fetch functionality",
+      "path": "skills/claude/tool-description-webfetch.md"
+    },
+    {
+      "name": "tool-description-websearch",
+      "category": "claude",
+      "description": "Tool description for web search functionality",
+      "path": "skills/claude/tool-description-websearch.md"
+    },
+    {
+      "name": "tool-description-workflow",
+      "category": "claude",
+      "description": "Describes the Workflow tool for running deterministic multi-subagent orchestration scripts, including opt-in requirements, script metadata, agent hooks, concurrency, budgeting, quality patterns, and resume behavior",
+      "path": "skills/claude/tool-description-workflow.md"
+    },
+    {
+      "name": "tool-description-write",
+      "category": "claude",
+      "description": "Tool for writing files to the local filesystem",
+      "path": "skills/claude/tool-description-write.md"
+    },
+    {
+      "name": "tool-description-write-read-existing-file-first",
+      "category": "claude",
+      "description": "Tool description for Write in environments where existing files must be read before overwrite",
+      "path": "skills/claude/tool-description-write-read-existing-file-first.md"
+    },
+    {
+      "name": "tool-parameter-computer-action",
+      "category": "claude",
+      "description": "Action parameter options for the Chrome browser computer tool",
+      "path": "skills/claude/tool-parameter-computer-action.md"
+    },
+    {
+      "name": "accessibility-a11y",
+      "category": "gemini",
+      "description": "Implementing WCAG accessibility guidelines, semantic HTML5, and screen reader ARIA roles.",
+      "path": "skills/gemini/accessibility-a11y/SKILL.md"
+    },
+    {
+      "name": "audio-intelligence",
+      "category": "gemini",
+      "description": "Native audio understanding, transcription, speech tone analysis, sound classification, and multi-speaker transcription.",
+      "path": "skills/gemini/audio-intelligence/SKILL.md"
+    },
+    {
+      "name": "aws-s3-storage",
+      "category": "gemini",
+      "description": "Uploading, downloading, and managing static file assets in Amazon Web Services S3 Buckets using Boto3.",
+      "path": "skills/gemini/aws-s3-storage/SKILL.md"
+    },
+    {
+      "name": "beautifulsoup-scraping",
+      "category": "gemini",
+      "description": "Parsing HTML web structures, searching tags, and extracting text using BeautifulSoup4.",
+      "path": "skills/gemini/beautifulsoup-scraping/SKILL.md"
+    },
+    {
+      "name": "claude-system-prompt",
+      "category": "gemini",
+      "description": "Operational rules, safety instructions, reasoning guidelines, and behavioral patterns from the Claude 3.7 Sonnet system prompt.",
+      "path": "skills/gemini/claude-system-prompt/SKILL.md"
+    },
+    {
+      "name": "code-execution",
+      "category": "gemini",
+      "description": "Enabling Gemini's native sandboxed Python runtime, capturing code outputs, and mathematical/scientific executions.",
+      "path": "skills/gemini/code-execution/SKILL.md"
+    },
+    {
+      "name": "context-caching",
+      "category": "gemini",
+      "description": "Large context caching, cached token management, TTL config, and cost optimization.",
+      "path": "skills/gemini/context-caching/SKILL.md"
+    },
+    {
+      "name": "cron-scheduling",
+      "category": "gemini",
+      "description": "Scheduling recurring scripts, parsing crontab syntax, and implementing scheduled background loops.",
+      "path": "skills/gemini/cron-scheduling/SKILL.md"
+    },
+    {
+      "name": "cryptography-api",
+      "category": "gemini",
+      "description": "Symmetric/asymmetric encryption, hashing, password salting, and message verification via cryptography library.",
+      "path": "skills/gemini/cryptography-api/SKILL.md"
+    },
+    {
+      "name": "docker-compose-utils",
+      "category": "gemini",
+      "description": "Configuring, spinning up, and orchestrating multi-container local runtime environments with Docker Compose.",
+      "path": "skills/gemini/docker-compose-utils/SKILL.md"
+    },
+    {
+      "name": "email-delivery",
+      "category": "gemini",
+      "description": "Routing transactional user emails via SMTP, Resend, or SendGrid APIs in Python.",
+      "path": "skills/gemini/email-delivery/SKILL.md"
+    },
+    {
+      "name": "express-routing",
+      "category": "gemini",
+      "description": "Building Express web server endpoints, routing HTTP requests, and configuring server middlewares in Node.js.",
+      "path": "skills/gemini/express-routing/SKILL.md"
+    },
+    {
+      "name": "fastapi-apis",
+      "category": "gemini",
+      "description": "Building high-performance, asynchronous REST APIs with FastAPI, Pydantic, and automatic OpenAPI validation.",
+      "path": "skills/gemini/fastapi-apis/SKILL.md"
+    },
+    {
+      "name": "flask-restful-api",
+      "category": "gemini",
+      "description": "Structuring clean, resource-based HTTP REST endpoints using Flask and Flask-RESTful routing.",
+      "path": "skills/gemini/flask-restful-api/SKILL.md"
+    },
+    {
+      "name": "function-calling",
+      "category": "gemini",
+      "description": "Registering custom Python tools, handling parallel function calls, and executing callback routines.",
+      "path": "skills/gemini/function-calling/SKILL.md"
+    },
+    {
+      "name": "git-workflow-utils",
+      "category": "gemini",
+      "description": "Advanced git operations including branching, commits, merge conflicts, tag creation, and history manipulation.",
+      "path": "skills/gemini/git-workflow-utils/SKILL.md"
+    },
+    {
+      "name": "github-actions-ci",
+      "category": "gemini",
+      "description": "Configuring GitHub Actions workflows for continuous integration, testing, and deployment automation.",
+      "path": "skills/gemini/github-actions-ci/SKILL.md"
+    },
+    {
+      "name": "graphql-queries",
+      "category": "gemini",
+      "description": "Constructing GraphQL query client configurations and mutation payloads in Python.",
+      "path": "skills/gemini/graphql-queries/SKILL.md"
+    },
+    {
+      "name": "image-optimization",
+      "category": "gemini",
+      "description": "Resizing, compressing formats, and applying image filters using Pillow.",
+      "path": "skills/gemini/image-optimization/SKILL.md"
+    },
+    {
+      "name": "jwt-auth-utils",
+      "category": "gemini",
+      "description": "Generating, signing, and validating JSON Web Tokens (JWT) for secure REST APIs and user sessions.",
+      "path": "skills/gemini/jwt-auth-utils/SKILL.md"
+    },
+    {
+      "name": "linux-bash-scripting",
+      "category": "gemini",
+      "description": "Writing automation scripts, file directory operations, and loop controls in Linux Bash shell.",
+      "path": "skills/gemini/linux-bash-scripting/SKILL.md"
+    },
+    {
+      "name": "logging-monitoring",
+      "category": "gemini",
+      "description": "Configuring Python logging library, formatting streams, and managing rotating logs.",
+      "path": "skills/gemini/logging-monitoring/SKILL.md"
+    },
+    {
+      "name": "markdown-documentation",
+      "category": "gemini",
+      "description": "Structuring technical markdown docs, wikis, and building clean developer layout grids.",
+      "path": "skills/gemini/markdown-documentation/SKILL.md"
+    },
+    {
+      "name": "mongodb-db",
+      "category": "gemini",
+      "description": "Connecting, querying, updating, and aggregating document-based records in MongoDB.",
+      "path": "skills/gemini/mongodb-db/SKILL.md"
+    },
+    {
+      "name": "multimodal-video",
+      "category": "gemini",
+      "description": "Native video understanding, event timestamping, frame sampling, and video narrative generation.",
+      "path": "skills/gemini/multimodal-video/SKILL.md"
+    },
+    {
+      "name": "nextjs-framework",
+      "category": "gemini",
+      "description": "Building modern React web applications with Server-Side Rendering (SSR), API routes, and routing layouts in Next.js.",
+      "path": "skills/gemini/nextjs-framework/SKILL.md"
+    },
+    {
+      "name": "nginx-routing",
+      "category": "gemini",
+      "description": "Configuring Nginx reverse proxy routing, load balancers, rate limits, and SSL termination.",
+      "path": "skills/gemini/nginx-routing/SKILL.md"
+    },
+    {
+      "name": "pandas-data-wrangling",
+      "category": "gemini",
+      "description": "Cleaning, filtering, merging, and aggregating massive tabular data structures using Pandas.",
+      "path": "skills/gemini/pandas-data-wrangling/SKILL.md"
+    },
+    {
+      "name": "pdf-parsing-utils",
+      "category": "gemini",
+      "description": "Extracting structured text tables and content blocks from PDF files using PyPDF or pdfplumber.",
+      "path": "skills/gemini/pdf-parsing-utils/SKILL.md"
+    },
+    {
+      "name": "performance-profiling",
+      "category": "gemini",
+      "description": "Measuring CPU performance metrics and memory bottlenecks in Python code blocks.",
+      "path": "skills/gemini/performance-profiling/SKILL.md"
+    },
+    {
+      "name": "playwright-browser",
+      "category": "gemini",
+      "description": "Automated headless web browser testing, page interactions, screenshot capture, and web scraping.",
+      "path": "skills/gemini/playwright-browser/SKILL.md"
+    },
+    {
+      "name": "prisma-orm-db",
+      "category": "gemini",
+      "description": "Type-safe database ORM management, migrations, and CRUD operations using Prisma in Node.js or Python.",
+      "path": "skills/gemini/prisma-orm-db/SKILL.md"
+    },
+    {
+      "name": "prometheus-metrics",
+      "category": "gemini",
+      "description": "Instrumenting system diagnostics, counting requests, and exporting metrics to Prometheus monitoring systems.",
+      "path": "skills/gemini/prometheus-metrics/SKILL.md"
+    },
+    {
+      "name": "pydantic-settings",
+      "category": "gemini",
+      "description": "Managing environment variables, validating system configurations, and parsing .env configurations using Pydantic Settings.",
+      "path": "skills/gemini/pydantic-settings/SKILL.md"
+    },
+    {
+      "name": "pydantic-validation",
+      "category": "gemini",
+      "description": "Data validation, data parsing, configuration management, and type coercion using Pydantic.",
+      "path": "skills/gemini/pydantic-validation/SKILL.md"
+    },
+    {
+      "name": "python-requests-client",
+      "category": "gemini",
+      "description": "Performing synchronous HTTP requests, managing sessions, passing headers, and query parameters using Requests.",
+      "path": "skills/gemini/python-requests-client/SKILL.md"
+    },
+    {
+      "name": "python-unittest",
+      "category": "gemini",
+      "description": "Writing test cases, assertions, mocking API calls, and running test runner pipelines using unittest.",
+      "path": "skills/gemini/python-unittest/SKILL.md"
+    },
+    {
+      "name": "rag-vector-db",
+      "category": "gemini",
+      "description": "Retrieval-Augmented Generation implementation using vector databases, embedding models, and query routines.",
+      "path": "skills/gemini/rag-vector-db/SKILL.md"
+    },
+    {
+      "name": "redis-caching",
+      "category": "gemini",
+      "description": "Distributed key-value caching, session storage, and rate limiting with Upstash or standard Redis.",
+      "path": "skills/gemini/redis-caching/SKILL.md"
+    },
+    {
+      "name": "regular-expressions",
+      "category": "gemini",
+      "description": "Designing, parsing, and searching string parameters using Python regular expressions.",
+      "path": "skills/gemini/regular-expressions/SKILL.md"
+    },
+    {
+      "name": "resend-email-api",
+      "category": "gemini",
+      "description": "Sending programmatic, HTML transactional emails with custom domains using Resend.",
+      "path": "skills/gemini/resend-email-api/SKILL.md"
+    },
+    {
+      "name": "search-grounding",
+      "category": "gemini",
+      "description": "Real-time Google Search grounding, live web query integration, and web source citation extraction.",
+      "path": "skills/gemini/search-grounding/SKILL.md"
+    },
+    {
+      "name": "security-headers",
+      "category": "gemini",
+      "description": "Implementing Content Security Policy (CSP), CORS, and essential security headers in web server responses.",
+      "path": "skills/gemini/security-headers/SKILL.md"
+    },
+    {
+      "name": "semantic-versioning",
+      "category": "gemini",
+      "description": "Configuring release versions, package numbering schemes, and tracking dependency compatibilities.",
+      "path": "skills/gemini/semantic-versioning/SKILL.md"
+    },
+    {
+      "name": "sqlite-database",
+      "category": "gemini",
+      "description": "Querying, migrating, and writing relational tables inside embedded SQLite databases.",
+      "path": "skills/gemini/sqlite-database/SKILL.md"
+    },
+    {
+      "name": "stripe-payments-api",
+      "category": "gemini",
+      "description": "Integrating Stripe payments, managing subscription billing checkout sessions, and validation signatures on webhooks.",
+      "path": "skills/gemini/stripe-payments-api/SKILL.md"
+    },
+    {
+      "name": "structured-output",
+      "category": "gemini",
+      "description": "Structured data extraction using Pydantic schemas, strict JSON output formats, and schema validation.",
+      "path": "skills/gemini/structured-output/SKILL.md"
+    },
+    {
+      "name": "supabase-db",
+      "category": "gemini",
+      "description": "Interacting with Supabase databases, user authentication, and storage buckets using the Python client.",
+      "path": "skills/gemini/supabase-db/SKILL.md"
+    },
+    {
+      "name": "tailwind-design",
+      "category": "gemini",
+      "description": "Configuring and structuring styling components with utility-first CSS classes in HTML or JSX.",
+      "path": "skills/gemini/tailwind-design/SKILL.md"
+    },
+    {
+      "name": "vite-frontend",
+      "category": "gemini",
+      "description": "Initializing, structuring, and bundling client-side Single-Page Applications (SPA) with Vite.",
+      "path": "skills/gemini/vite-frontend/SKILL.md"
+    },
+    {
+      "name": "websockets-network",
+      "category": "gemini",
+      "description": "Asynchronous bi-directional WebSocket client and server configuration in Python.",
+      "path": "skills/gemini/websockets-network/SKILL.md"
+    },
+    {
+      "name": "adaptyv",
+      "category": "scientific",
+      "description": "\"How to use the Adaptyv Bio Foundry API and Python SDK for protein experiment design, submission, and results retrieval. Use this skill whenever the user mentions Adaptyv, Foundry API, protein binding assays, protein screening experiments, BLI/SPR assays, thermostability assays, or wants to submit protein sequences for experimental characterization. Also trigger when code imports `adaptyv`, `adaptyv_sdk`, or `FoundryClient`, or references `foundry-api-public.adaptyvbio.com`.\"",
+      "path": "skills/scientific/adaptyv/SKILL.md"
+    },
+    {
+      "name": "aeon",
+      "category": "scientific",
+      "description": "This skill should be used for time series machine learning tasks including classification, regression, clustering, forecasting, anomaly detection, segmentation, and similarity search. Use when working with temporal data, sequential patterns, or time-indexed observations requiring specialized algorithms beyond standard ML approaches. Particularly suited for univariate and multivariate time series analysis with scikit-learn compatible APIs.",
+      "path": "skills/scientific/aeon/SKILL.md"
+    },
+    {
+      "name": "anndata",
+      "category": "scientific",
+      "description": "Data structure for annotated matrices in single-cell analysis. Use when working with .h5ad files or integrating with the scverse ecosystem. This is the data format skill\u2014for analysis workflows use scanpy; for probabilistic models use scvi-tools; for population-scale queries use cellxgene-census.",
+      "path": "skills/scientific/anndata/SKILL.md"
+    },
+    {
+      "name": "arboreto",
+      "category": "scientific",
+      "description": "Infer gene regulatory networks (GRNs) from gene expression data using scalable algorithms (GRNBoost2, GENIE3). Use when analyzing transcriptomics data (bulk RNA-seq, single-cell RNA-seq) to identify transcription factor-target gene relationships and regulatory interactions. Supports distributed computation for large-scale datasets.",
+      "path": "skills/scientific/arboreto/SKILL.md"
+    },
+    {
+      "name": "astropy",
+      "category": "scientific",
+      "description": "Comprehensive Python library for astronomy and astrophysics. This skill should be used when working with astronomical data including celestial coordinates, physical units, FITS files, cosmological calculations, time systems, tables, world coordinate systems (WCS), and astronomical data analysis. Use when tasks involve coordinate transformations, unit conversions, FITS file manipulation, cosmological distance calculations, time scale conversions, or astronomical data processing.",
+      "path": "skills/scientific/astropy/SKILL.md"
+    },
+    {
+      "name": "autoskill",
+      "category": "scientific",
+      "description": "Observe the user's screen via screenpipe, detect repeated research workflows, match them against existing scientific-agent-skills, and draft new skills (or composition recipes that chain existing ones) for the patterns not yet covered. Use when the user asks to analyze their recent work and propose skills based on what they actually do. Requires the screenpipe daemon (https://github.com/screenpipe/screenpipe) running locally on port 3030 \u2014 the skill has no other data source and will refuse to run if screenpipe is unreachable. All detection runs locally; only redacted cluster summaries reach the LLM.",
+      "path": "skills/scientific/autoskill/SKILL.md"
+    },
+    {
+      "name": "benchling-integration",
+      "category": "scientific",
+      "description": "Benchling R&D platform integration. Access registry (DNA, proteins), inventory, ELN entries, workflows via API, build Benchling Apps, query Data Warehouse, for lab data management automation.",
+      "path": "skills/scientific/benchling-integration/SKILL.md"
+    },
+    {
+      "name": "bgpt-paper-search",
+      "category": "scientific",
+      "description": "Search scientific papers and retrieve structured experimental data extracted from full-text studies via the BGPT MCP server. Returns 25+ fields per paper including methods, results, sample sizes, quality scores, and conclusions. Use for literature reviews, evidence synthesis, and finding experimental details not available in abstracts alone.",
+      "path": "skills/scientific/bgpt-paper-search/SKILL.md"
+    },
+    {
+      "name": "bids",
+      "category": "scientific",
+      "description": ">",
+      "path": "skills/scientific/bids/SKILL.md"
+    },
+    {
+      "name": "biopython",
+      "category": "scientific",
+      "description": "Comprehensive molecular biology toolkit. Use for sequence manipulation, file parsing (FASTA/GenBank/PDB), phylogenetics, and programmatic NCBI/PubMed access (Bio.Entrez). Best for batch processing, custom bioinformatics pipelines, BLAST automation. For quick lookups use gget; for multi-service integration use bioservices.",
+      "path": "skills/scientific/biopython/SKILL.md"
+    },
+    {
+      "name": "bioservices",
+      "category": "scientific",
+      "description": "Unified Python interface to 40+ bioinformatics services. Use when querying multiple databases (UniProt, KEGG, ChEMBL, Reactome) in a single workflow with consistent API. Best for cross-database analysis, ID mapping across services. For quick single-database lookups use gget; for sequence/file manipulation use biopython.",
+      "path": "skills/scientific/bioservices/SKILL.md"
+    },
+    {
+      "name": "cellxgene-census",
+      "category": "scientific",
+      "description": "Query the CELLxGENE Census (61M+ cells) programmatically. Use when you need expression data across tissues, diseases, or cell types from the largest curated single-cell atlas. Best for population-scale queries, reference atlas comparisons. For analyzing your own data use scanpy or scvi-tools.",
+      "path": "skills/scientific/cellxgene-census/SKILL.md"
+    },
+    {
+      "name": "cirq",
+      "category": "scientific",
+      "description": "Google quantum computing framework. Use when targeting Google Quantum AI hardware, designing noise-aware circuits, or running quantum characterization experiments. Best for Google hardware, noise modeling, and low-level circuit design. For IBM hardware use qiskit; for quantum ML with autodiff use pennylane; for physics simulations use qutip.",
+      "path": "skills/scientific/cirq/SKILL.md"
+    },
+    {
+      "name": "citation-management",
+      "category": "scientific",
+      "description": "Comprehensive citation management for academic research. Search Google Scholar and PubMed for papers, extract accurate metadata, validate citations, and generate properly formatted BibTeX entries. This skill should be used when you need to find papers, verify citation information, convert DOIs to BibTeX, or ensure reference accuracy in scientific writing.",
+      "path": "skills/scientific/citation-management/SKILL.md"
+    },
+    {
+      "name": "climate-data-analysis",
+      "category": "scientific",
+      "description": "Climate and Earth system data analysis using xarray, cartopy, cfgrib, and CMIP6/ERA5 datasets. Use for loading NetCDF/GRIB climate data, computing climatologies, spatial aggregation, anomaly detection, bias correction, and publication-quality climate maps. Best for atmospheric, oceanic, and land surface data analysis.",
+      "path": "skills/scientific/climate-data-analysis/SKILL.md"
+    },
+    {
+      "name": "clinical-decision-support",
+      "category": "scientific",
+      "description": "Generate professional clinical decision support (CDS) documents for pharmaceutical and clinical research settings, including patient cohort analyses (biomarker-stratified with outcomes) and treatment recommendation reports (evidence-based guidelines with decision algorithms). Supports GRADE evidence grading, statistical analysis (hazard ratios, survival curves, waterfall plots), biomarker integration, and regulatory compliance. Outputs publication-ready LaTeX/PDF format optimized for drug development, clinical research, and evidence synthesis.",
+      "path": "skills/scientific/clinical-decision-support/SKILL.md"
+    },
+    {
+      "name": "clinical-reports",
+      "category": "scientific",
+      "description": "Write comprehensive clinical reports including case reports (CARE guidelines), diagnostic reports (radiology/pathology/lab), clinical trial reports (ICH-E3, SAE, CSR), and patient documentation (SOAP, H&P, discharge summaries). Full support with templates, regulatory compliance (HIPAA, FDA, ICH-GCP), and validation tools.",
+      "path": "skills/scientific/clinical-reports/SKILL.md"
+    },
+    {
+      "name": "cobrapy",
+      "category": "scientific",
+      "description": "Constraint-based metabolic modeling (COBRA). FBA, FVA, gene knockouts, flux sampling, SBML models, for systems biology and metabolic engineering analysis.",
+      "path": "skills/scientific/cobrapy/SKILL.md"
+    },
+    {
+      "name": "consciousness-council",
+      "category": "scientific",
+      "description": "Run a multi-perspective Mind Council deliberation on any question, decision, or creative challenge. Use this skill whenever the user wants diverse viewpoints, needs help making a tough decision, asks for a council/panel/board discussion, wants to explore a problem from multiple angles, requests devil's advocate analysis, or says things like \"what would different experts think about this\", \"help me think through this from all sides\", \"council mode\", \"mind council\", or \"deliberate on this\". Also trigger when the user faces a dilemma, trade-off, or complex choice with no obvious answer.",
+      "path": "skills/scientific/consciousness-council/SKILL.md"
+    },
+    {
+      "name": "crispr-screen-analysis",
+      "category": "scientific",
+      "description": "CRISPR genetic screen analysis using MAGeCK, CRISPRclean, and crispy. Use for pooled CRISPR knockout/activation screens, sgRNA count normalization, gene essentiality scoring, hit calling, pathway enrichment, and QC of CRISPR screen data. Supports both positive and negative selection screens.",
+      "path": "skills/scientific/crispr-screen-analysis/SKILL.md"
+    },
+    {
+      "name": "dask",
+      "category": "scientific",
+      "description": "Distributed computing for larger-than-RAM pandas/NumPy workflows. Use when you need to scale existing pandas/NumPy code beyond memory or across clusters. Best for parallel file processing, distributed ML, integration with existing pandas code. For out-of-core analytics on single machine use vaex; for in-memory speed use polars.",
+      "path": "skills/scientific/dask/SKILL.md"
+    },
+    {
+      "name": "database-lookup",
+      "category": "scientific",
+      "description": "Search 78 public scientific, biomedical, materials science, and economic databases via REST APIs. Covers physics/astronomy (NASA, NIST, SDSS, SIMBAD), earth/environment (USGS, NOAA, EPA), chemistry/drugs (PubChem, ChEMBL, DrugBank, FDA, KEGG, ZINC, BindingDB), materials (Materials Project, COD), biology/genomics (Reactome, UniProt, STRING, Ensembl, NCBI Gene, GEO, GTEx, PDB, AlphaFold, InterPro, BioGRID, Gene Ontology, dbSNP, gnomAD, ENCODE, Human Protein Atlas, Human Cell Atlas), disease/clinical (COSMIC, Open Targets, ClinicalTrials.gov, OMIM, ClinVar, GDC/TCGA, cBioPortal, DisGeNET, GWAS Catalog), regulatory (FDA, USPTO, SEC EDGAR), economics/finance (FRED, World Bank, US Treasury), demographics (US Census, Eurostat, WHO). Use when looking up compounds, genes, proteins, pathways, variants, clinical trials, patents, economic indicators, or any public database API query.",
+      "path": "skills/scientific/database-lookup/SKILL.md"
+    },
+    {
+      "name": "datamol",
+      "category": "scientific",
+      "description": "Pythonic wrapper around RDKit with simplified interface and sensible defaults. Preferred for standard drug discovery including SMILES parsing, standardization, descriptors, fingerprints, clustering, 3D conformers, parallel processing. Returns native rdkit.Chem.Mol objects. For advanced control or custom parameters, use rdkit directly.",
+      "path": "skills/scientific/datamol/SKILL.md"
+    },
+    {
+      "name": "deepchem",
+      "category": "scientific",
+      "description": "Molecular ML with diverse featurizers and pre-built datasets. Use for property prediction (ADMET, toxicity) with traditional ML or GNNs when you want extensive featurization options and MoleculeNet benchmarks. Best for quick experiments with pre-trained models, diverse molecular representations. For graph-first PyTorch workflows use torchdrug; for benchmark datasets use pytdc.",
+      "path": "skills/scientific/deepchem/SKILL.md"
+    },
+    {
+      "name": "deeptools",
+      "category": "scientific",
+      "description": "NGS analysis toolkit. BAM to bigWig conversion, QC (correlation, PCA, fingerprints), heatmaps/profiles (TSS, peaks), for ChIP-seq, RNA-seq, ATAC-seq visualization.",
+      "path": "skills/scientific/deeptools/SKILL.md"
+    },
+    {
+      "name": "depmap",
+      "category": "scientific",
+      "description": "Query the Cancer Dependency Map (DepMap) for cancer cell line gene dependency scores (CRISPR Chronos), drug sensitivity data, and gene effect profiles. Use for identifying cancer-specific vulnerabilities, synthetic lethal interactions, and validating oncology drug targets.",
+      "path": "skills/scientific/depmap/SKILL.md"
+    },
+    {
+      "name": "dhdna-profiler",
+      "category": "scientific",
+      "description": "Extract cognitive patterns and thinking fingerprints from any text. Use this skill when the user wants to analyze how someone thinks, understand cognitive style, profile writing or speech patterns, compare thinking styles between people, asks \"what's my thinking style\", \"analyze how this person reasons\", \"cognitive profile\", \"thinking pattern\", \"DHDNA\", \"digital DNA\", or wants to understand the mind behind any text. Also trigger when the user provides text and wants deeper insight into the author's reasoning patterns, decision-making style, or cognitive signature.",
+      "path": "skills/scientific/dhdna-profiler/SKILL.md"
+    },
+    {
+      "name": "diffdock",
+      "category": "scientific",
+      "description": "Diffusion-based molecular docking. Predict protein-ligand binding poses from PDB/SMILES, confidence scores, virtual screening, for structure-based drug design. Not for affinity prediction.",
+      "path": "skills/scientific/diffdock/SKILL.md"
+    },
+    {
+      "name": "dnanexus-integration",
+      "category": "scientific",
+      "description": "DNAnexus cloud genomics platform. Build apps/applets, manage data (upload/download), dxpy Python SDK, run workflows, FASTQ/BAM/VCF, for genomics pipeline development and execution.",
+      "path": "skills/scientific/dnanexus-integration/SKILL.md"
+    },
+    {
+      "name": "docx",
+      "category": "scientific",
+      "description": "\"Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.\"",
+      "path": "skills/scientific/docx/SKILL.md"
+    },
+    {
+      "name": "esm",
+      "category": "scientific",
+      "description": "Comprehensive toolkit for protein language models including ESM3 (generative multimodal protein design across sequence, structure, and function) and ESM C (efficient protein embeddings and representations). Use this skill when working with protein sequences, structures, or function prediction; designing novel proteins; generating protein embeddings; performing inverse folding; or conducting protein engineering tasks. Supports both local model usage and cloud-based Forge API for scalable inference.",
+      "path": "skills/scientific/esm/SKILL.md"
+    },
+    {
+      "name": "etetoolkit",
+      "category": "scientific",
+      "description": "Phylogenetic tree toolkit (ETE). Tree manipulation (Newick/NHX), evolutionary event detection, orthology/paralogy, NCBI taxonomy, visualization (PDF/SVG), for phylogenomics.",
+      "path": "skills/scientific/etetoolkit/SKILL.md"
+    },
+    {
+      "name": "exa-search",
+      "category": "scientific",
+      "description": "\"Web toolkit powered by Exa, tuned for scientific and technical content. Use this skill when the user needs to search the web or fetch/extract URL content. Covers: web search (semantic lookups, research, current info \u2014 with optional research-paper category and academic domain filtering) and URL extraction (fetching pages, articles, academic PDFs in batch). Use this skill for web-related tasks when the user wants high-quality search or scholarly filtering via category=research paper. Triggers on requests to search, look up, fetch a page, or extract an article.\"",
+      "path": "skills/scientific/exa-search/SKILL.md"
+    },
+    {
+      "name": "exploratory-data-analysis",
+      "category": "scientific",
+      "description": "Perform comprehensive exploratory data analysis on scientific data files across 200+ file formats. This skill should be used when analyzing any scientific data file to understand its structure, content, quality, and characteristics. Automatically detects file type and generates detailed markdown reports with format-specific analysis, quality metrics, and downstream analysis recommendations. Covers chemistry, bioinformatics, microscopy, spectroscopy, proteomics, metabolomics, and general scientific data formats.",
+      "path": "skills/scientific/exploratory-data-analysis/SKILL.md"
+    },
+    {
+      "name": "flowio",
+      "category": "scientific",
+      "description": "Parse FCS (Flow Cytometry Standard) files v2.0-3.1. Extract events as NumPy arrays, read metadata/channels, convert to CSV/DataFrame, for flow cytometry data preprocessing.",
+      "path": "skills/scientific/flowio/SKILL.md"
+    },
+    {
+      "name": "fluidsim",
+      "category": "scientific",
+      "description": "Framework for computational fluid dynamics simulations using Python. Use when running fluid dynamics simulations including Navier-Stokes equations (2D/3D), shallow water equations, stratified flows, or when analyzing turbulence, vortex dynamics, or geophysical flows. Provides pseudospectral methods with FFT, HPC support, and comprehensive output analysis.",
+      "path": "skills/scientific/fluidsim/SKILL.md"
+    },
+    {
+      "name": "generate-image",
+      "category": "scientific",
+      "description": "Generate or edit images using AI models (FLUX, Nano Banana 2). Use for general-purpose image generation including photos, illustrations, artwork, visual assets, concept art, and any image that is not a technical diagram or schematic. For flowcharts, circuits, pathways, and technical diagrams, use the scientific-schematics skill instead.",
+      "path": "skills/scientific/generate-image/SKILL.md"
+    },
+    {
+      "name": "geniml",
+      "category": "scientific",
+      "description": "This skill should be used when working with genomic interval data (BED files) for machine learning tasks. Use for training region embeddings (Region2Vec, BEDspace), single-cell ATAC-seq analysis (scEmbed), building consensus peaks (universes), or any ML-based analysis of genomic regions. Applies to BED file collections, scATAC-seq data, chromatin accessibility datasets, and region-based genomic feature learning.",
+      "path": "skills/scientific/geniml/SKILL.md"
+    },
+    {
+      "name": "geomaster",
+      "category": "scientific",
+      "description": "Comprehensive geospatial science skill covering remote sensing, GIS, spatial analysis, machine learning for earth observation, and 30+ scientific domains. Supports satellite imagery processing (Sentinel, Landsat, MODIS, SAR, hyperspectral), vector and raster data operations, spatial statistics, point cloud processing, network analysis, cloud-native workflows (STAC, COG, Planetary Computer), and 8 programming languages (Python, R, Julia, JavaScript, C++, Java, Go, Rust) with 500+ code examples. Use for remote sensing workflows, GIS analysis, spatial ML, Earth observation data processing, terrain analysis, hydrological modeling, marine spatial analysis, atmospheric science, and any geospatial computation task.",
+      "path": "skills/scientific/geomaster/SKILL.md"
+    },
+    {
+      "name": "geopandas",
+      "category": "scientific",
+      "description": "Python library for working with geospatial vector data including shapefiles, GeoJSON, and GeoPackage files. Use when working with geographic data for spatial analysis, geometric operations, coordinate transformations, spatial joins, overlay operations, choropleth mapping, or any task involving reading/writing/analyzing vector geographic data. Supports PostGIS databases, interactive maps, and integration with matplotlib/folium/cartopy. Use for tasks like buffer analysis, spatial joins between datasets, dissolving boundaries, clipping data, calculating areas/distances, reprojecting coordinate systems, creating maps, or converting between spatial file formats.",
+      "path": "skills/scientific/geopandas/SKILL.md"
+    },
+    {
+      "name": "get-available-resources",
+      "category": "scientific",
+      "description": "This skill should be used at the start of any computationally intensive scientific task to detect and report available system resources (CPU cores, GPUs, memory, disk space). It creates a JSON file with resource information and strategic recommendations that inform computational approach decisions such as whether to use parallel processing (joblib, multiprocessing), out-of-core computing (Dask, Zarr), GPU acceleration (PyTorch, JAX), or memory-efficient strategies. Use this skill before running analyses, training models, processing large datasets, or any task where resource constraints matter.",
+      "path": "skills/scientific/get-available-resources/SKILL.md"
+    },
+    {
+      "name": "gget",
+      "category": "scientific",
+      "description": "\"Fast CLI/Python queries to 20+ bioinformatics databases. Use for quick lookups: gene info, BLAST searches, AlphaFold structures, enrichment analysis. Best for interactive exploration, simple queries. For batch processing or advanced BLAST use biopython; for multi-database Python workflows use bioservices.\"",
+      "path": "skills/scientific/gget/SKILL.md"
+    },
+    {
+      "name": "ginkgo-cloud-lab",
+      "category": "scientific",
+      "description": "Submit and manage protocols on Ginkgo Bioworks Cloud Lab (cloud.ginkgo.bio), a web-based interface for autonomous lab execution on Reconfigurable Automation Carts (RACs). Use when the user wants to run cell-free protein expression (validation or optimization), generate fluorescent pixel art, or interact with Ginkgo Cloud Lab services. Covers protocol selection, input preparation, pricing, and ordering workflows.",
+      "path": "skills/scientific/ginkgo-cloud-lab/SKILL.md"
+    },
+    {
+      "name": "glycoengineering",
+      "category": "scientific",
+      "description": "Analyze and engineer protein glycosylation. Scan sequences for N-glycosylation sequons (N-X-S/T), predict O-glycosylation hotspots, and access curated glycoengineering tools (NetOGlyc, GlycoShield, GlycoWorkbench). For glycoprotein engineering, therapeutic antibody optimization, and vaccine design.",
+      "path": "skills/scientific/glycoengineering/SKILL.md"
+    },
+    {
+      "name": "gtars",
+      "category": "scientific",
+      "description": "High-performance toolkit for genomic interval analysis in Rust with Python bindings. Use when working with genomic regions, BED files, coverage tracks, overlap detection, tokenization for ML models, or fragment analysis in computational genomics and machine learning applications.",
+      "path": "skills/scientific/gtars/SKILL.md"
+    },
+    {
+      "name": "histolab",
+      "category": "scientific",
+      "description": "Lightweight WSI tile extraction and preprocessing. Use for basic slide processing tissue detection, tile extraction, stain normalization for H&E images. Best for simple pipelines, dataset preparation, quick tile-based analysis. For advanced spatial proteomics, multiplexed imaging, or deep learning pipelines use pathml.",
+      "path": "skills/scientific/histolab/SKILL.md"
+    },
+    {
+      "name": "hugging-science",
+      "category": "scientific",
+      "description": "Use when the user is doing AI/ML work in a scientific domain \u2014 biology, chemistry, physics, astronomy, climate, genomics, materials science, medicine, ecology, energy, conservation, engineering, mathematics, scientific reasoning, drug discovery, protein design, weather modeling, theorem proving, single-cell, PDE solving, or anything similar. Hugging Science (huggingscience.co) is a curated catalog of scientific datasets, models, blog posts, and interactive Spaces; the `hugging-science` org on Hugging Face hosts community datasets, models, and demo Spaces. This skill helps you discover the right resource AND actually use it \u2014 loading datasets via `datasets`, running models via `transformers` or the HF Inference API, calling Spaces like BoltzGen via `gradio_client`, and citing blog posts for methodology. Trigger this skill whenever a user mentions a scientific ML task, asks for \"a dataset/model for X\" where X is a scientific topic, wants to fine-tune on scientific data, asks about protein / molecule / genome / climate / materials / astronomy / pathology / weather ML, or needs AI tools for research \u2014 even if they never say \"Hugging Science\" explicitly. The catalog is purpose-built for LLM agents (it ships an `llms-full.txt`); prefer it over generic web search for these tasks.",
+      "path": "skills/scientific/hugging-science/SKILL.md"
+    },
+    {
+      "name": "hypogenic",
+      "category": "scientific",
+      "description": "Automated LLM-driven hypothesis generation and testing on tabular datasets. Use when you want to systematically explore hypotheses about patterns in empirical data (e.g., deception detection, content analysis). Combines literature insights with data-driven hypothesis testing. For manual hypothesis formulation use hypothesis-generation; for creative ideation use scientific-brainstorming.",
+      "path": "skills/scientific/hypogenic/SKILL.md"
+    },
+    {
+      "name": "hypothesis-generation",
+      "category": "scientific",
+      "description": "Structured hypothesis formulation from observations. Use when you have experimental observations or data and need to formulate testable hypotheses with predictions, propose mechanisms, and design experiments to test them. Follows scientific method framework. For open-ended ideation use scientific-brainstorming; for automated LLM-driven hypothesis testing on datasets use hypogenic.",
+      "path": "skills/scientific/hypothesis-generation/SKILL.md"
+    },
+    {
+      "name": "imaging-data-commons",
+      "category": "scientific",
+      "description": "Query and download public cancer imaging data from NCI Imaging Data Commons using idc-index. Use for accessing large-scale radiology (CT, MR, PET) and pathology datasets for AI training or research. No authentication required. Query by metadata, visualize in browser, check licenses.",
+      "path": "skills/scientific/imaging-data-commons/SKILL.md"
+    },
+    {
+      "name": "infographics",
+      "category": "scientific",
+      "description": "\"Create professional infographics using Nano Banana Pro AI with smart iterative refinement. Uses Gemini 3 Pro for quality review. Integrates research-lookup and web search for accurate data. Supports 10 infographic types, 8 industry styles, and colorblind-safe palettes.\"",
+      "path": "skills/scientific/infographics/SKILL.md"
+    },
+    {
+      "name": "iso-13485-certification",
+      "category": "scientific",
+      "description": "Comprehensive toolkit for preparing ISO 13485 certification documentation for medical device Quality Management Systems. Use when users need help with ISO 13485 QMS documentation, including (1) conducting gap analysis of existing documentation, (2) creating Quality Manuals, (3) developing required procedures and work instructions, (4) preparing Medical Device Files, (5) understanding ISO 13485 requirements, or (6) identifying missing documentation for medical device certification. Also use when users mention medical device regulations, QMS certification, FDA QMSR, EU MDR, or need help with quality system documentation.",
+      "path": "skills/scientific/iso-13485-certification/SKILL.md"
+    },
+    {
+      "name": "labarchive-integration",
+      "category": "scientific",
+      "description": "Electronic lab notebook API integration. Access notebooks, manage entries/attachments, backup notebooks, integrate with Protocols.io/Jupyter/REDCap, for programmatic ELN workflows.",
+      "path": "skills/scientific/labarchive-integration/SKILL.md"
+    },
+    {
+      "name": "lamindb",
+      "category": "scientific",
+      "description": "This skill should be used when working with LaminDB, an open-source data framework for biology that makes data queryable, traceable, reproducible, and FAIR. Use when managing biological datasets (scRNA-seq, spatial, flow cytometry, etc.), tracking computational workflows, curating and validating data with biological ontologies, building data lakehouses, or ensuring data lineage and reproducibility in biological research. Covers data management, annotation, ontologies (genes, cell types, diseases, tissues), schema validation, integrations with workflow managers (Nextflow, Snakemake) and MLOps platforms (W&B, MLflow), and deployment strategies.",
+      "path": "skills/scientific/lamindb/SKILL.md"
+    },
+    {
+      "name": "latchbio-integration",
+      "category": "scientific",
+      "description": "Latch platform for bioinformatics workflows. Build pipelines with Latch SDK, @workflow/@task decorators, deploy serverless workflows, LatchFile/LatchDir, Nextflow/Snakemake integration.",
+      "path": "skills/scientific/latchbio-integration/SKILL.md"
+    },
+    {
+      "name": "latex-posters",
+      "category": "scientific",
+      "description": "\"Create professional research posters in LaTeX using beamerposter, tikzposter, or baposter. Support for conference presentations, academic posters, and scientific communication. Includes layout design, color schemes, multi-column formats, figure integration, and poster-specific best practices for visual communication.\"",
+      "path": "skills/scientific/latex-posters/SKILL.md"
+    },
+    {
+      "name": "literature-review",
+      "category": "scientific",
+      "description": "Conduct comprehensive, systematic literature reviews using multiple academic databases (PubMed, arXiv, bioRxiv, Semantic Scholar, etc.). This skill should be used when conducting systematic literature reviews, meta-analyses, research synthesis, or comprehensive literature searches across biomedical, scientific, and technical domains. Creates professionally formatted markdown documents and PDFs with verified citations in multiple citation styles (APA, Nature, Vancouver, etc.).",
+      "path": "skills/scientific/literature-review/SKILL.md"
+    },
+    {
+      "name": "markdown-mermaid-writing",
+      "category": "scientific",
+      "description": "Comprehensive markdown and Mermaid diagram writing skill. Use when creating any scientific document, report, analysis, or visualization. Establishes text-based diagrams as the default documentation standard with full style guides (markdown + mermaid), 24 diagram type references, and 9 document templates.",
+      "path": "skills/scientific/markdown-mermaid-writing/SKILL.md"
+    },
+    {
+      "name": "market-research-reports",
+      "category": "scientific",
+      "description": "Generate comprehensive market research reports (50+ pages) in the style of top consulting firms (McKinsey, BCG, Gartner). Features professional LaTeX formatting, extensive visual generation with scientific-schematics and generate-image, deep integration with research-lookup for data gathering, and multi-framework strategic analysis including Porter Five Forces, PESTLE, SWOT, TAM/SAM/SOM, and BCG Matrix.",
+      "path": "skills/scientific/market-research-reports/SKILL.md"
+    },
+    {
+      "name": "markitdown",
+      "category": "scientific",
+      "description": "Convert files and office documents to Markdown. Supports PDF, DOCX, PPTX, XLSX, images (with OCR), audio (with transcription), HTML, CSV, JSON, XML, ZIP, YouTube URLs, EPubs and more.",
+      "path": "skills/scientific/markitdown/SKILL.md"
+    },
+    {
+      "name": "matchms",
+      "category": "scientific",
+      "description": "Spectral similarity and compound identification for metabolomics. Use for comparing mass spectra, computing similarity scores (cosine, modified cosine), and identifying unknown compounds from spectral libraries. Best for metabolite identification, spectral matching, library searching. For full LC-MS/MS proteomics pipelines use pyopenms.",
+      "path": "skills/scientific/matchms/SKILL.md"
+    },
+    {
+      "name": "matlab",
+      "category": "scientific",
+      "description": "MATLAB and GNU Octave numerical computing for matrix operations, data analysis, visualization, and scientific computing. Use when writing MATLAB/Octave scripts for linear algebra, signal processing, image processing, differential equations, optimization, statistics, or creating scientific visualizations. Also use when the user needs help with MATLAB syntax, functions, or wants to convert between MATLAB and Python code. Scripts can be executed with MATLAB or the open-source GNU Octave interpreter.",
+      "path": "skills/scientific/matlab/SKILL.md"
+    },
+    {
+      "name": "matplotlib",
+      "category": "scientific",
+      "description": "Low-level plotting library for full customization. Use when you need fine-grained control over every plot element, creating novel plot types, or integrating with specific scientific workflows. Export to PNG/PDF/SVG for publication. For quick statistical plots use seaborn; for interactive plots use plotly; for publication-ready multi-panel figures with journal styling, use scientific-visualization.",
+      "path": "skills/scientific/matplotlib/SKILL.md"
+    },
+    {
+      "name": "medchem",
+      "category": "scientific",
+      "description": "Medicinal chemistry filters. Apply drug-likeness rules (Lipinski, Veber), PAINS filters, structural alerts, complexity metrics, for compound prioritization and library filtering.",
+      "path": "skills/scientific/medchem/SKILL.md"
+    },
+    {
+      "name": "metabolomics-analysis",
+      "category": "scientific",
+      "description": "Untargeted and targeted metabolomics data analysis using pyMZML, mzTab-M processing, and metabolite identification. Use for LC-MS/GC-MS feature detection, metabolite annotation, differential metabolite analysis, pathway mapping, and metabolic flux visualization. Covers XCMS-compatible workflows in Python.",
+      "path": "skills/scientific/metabolomics-analysis/SKILL.md"
+    },
+    {
+      "name": "modal",
+      "category": "scientific",
+      "description": "Cloud computing platform for running Python on GPUs and serverless infrastructure. Use when deploying AI/ML models, running GPU-accelerated workloads, serving web endpoints, scheduling batch jobs, or scaling Python code to the cloud. Use this skill whenever the user mentions Modal, serverless GPU compute, deploying ML models to the cloud, serving inference endpoints, running batch processing in the cloud, or needs to scale Python workloads beyond their local machine. Also use when the user wants to run code on H100s, A100s, or other cloud GPUs, or needs to create a web API for a model.",
+      "path": "skills/scientific/modal/SKILL.md"
+    },
+    {
+      "name": "molecular-dynamics",
+      "category": "scientific",
+      "description": "Run and analyze molecular dynamics simulations with OpenMM and MDAnalysis. Set up protein/small molecule systems, define force fields, run energy minimization and production MD, analyze trajectories (RMSD, RMSF, contact maps, free energy surfaces). For structural biology, drug binding, and biophysics.",
+      "path": "skills/scientific/molecular-dynamics/SKILL.md"
+    },
+    {
+      "name": "molfeat",
+      "category": "scientific",
+      "description": "Molecular featurization for ML (100+ featurizers). ECFP, MACCS, descriptors, pretrained models (ChemBERTa), convert SMILES to features, for QSAR and molecular ML.",
+      "path": "skills/scientific/molfeat/SKILL.md"
+    },
+    {
+      "name": "networkx",
+      "category": "scientific",
+      "description": "Comprehensive toolkit for creating, analyzing, and visualizing complex networks and graphs in Python. Use when working with network/graph data structures, analyzing relationships between entities, computing graph algorithms (shortest paths, centrality, clustering), detecting communities, generating synthetic networks, or visualizing network topologies. Applicable to social networks, biological networks, transportation systems, citation networks, and any domain involving pairwise relationships.",
+      "path": "skills/scientific/networkx/SKILL.md"
+    },
+    {
+      "name": "neurokit2",
+      "category": "scientific",
+      "description": "Comprehensive biosignal processing toolkit for analyzing physiological data including ECG, EEG, EDA, RSP, PPG, EMG, and EOG signals. Use this skill when processing cardiovascular signals, brain activity, electrodermal responses, respiratory patterns, muscle activity, or eye movements. Applicable for heart rate variability analysis, event-related potentials, complexity measures, autonomic nervous system assessment, psychophysiology research, and multi-modal physiological signal integration.",
+      "path": "skills/scientific/neurokit2/SKILL.md"
+    },
+    {
+      "name": "neuropixels-analysis",
+      "category": "scientific",
+      "description": "Neuropixels neural recording analysis. Load SpikeGLX/OpenEphys data, preprocess, motion correction, Kilosort4 spike sorting, quality metrics, Allen/IBL curation, AI-assisted visual analysis, for Neuropixels 1.0/2.0 extracellular electrophysiology. Use when working with neural recordings, spike sorting, extracellular electrophysiology, or when the user mentions Neuropixels, SpikeGLX, Open Ephys, Kilosort, quality metrics, or unit curation.",
+      "path": "skills/scientific/neuropixels-analysis/SKILL.md"
+    },
+    {
+      "name": "neuroscience-imaging",
+      "category": "scientific",
+      "description": "Neuroimaging data analysis with nilearn, nibabel, and fMRIPrep outputs. Use for fMRI/MRI data loading, brain atlas parcellation, functional connectivity analysis, GLM-based task fMRI, resting-state network analysis, and publication-quality brain visualizations. Covers structural MRI, task fMRI, and rs-fMRI workflows.",
+      "path": "skills/scientific/neuroscience-imaging/SKILL.md"
+    },
+    {
+      "name": "ngs-pipeline-management",
+      "category": "scientific",
+      "description": "Next-generation sequencing pipeline management with Snakemake and Nextflow. Use for building, running, and debugging reproducible NGS workflows for RNA-seq, WGS, ChIP-seq, ATAC-seq, and amplicon sequencing. Covers pipeline design patterns, HPC/cloud execution, containerization, and workflow optimization.",
+      "path": "skills/scientific/ngs-pipeline-management/SKILL.md"
+    },
+    {
+      "name": "omero-integration",
+      "category": "scientific",
+      "description": "Microscopy data management platform. Access images via Python, retrieve datasets, analyze pixels, manage ROIs/annotations, batch processing, for high-content screening and microscopy workflows.",
+      "path": "skills/scientific/omero-integration/SKILL.md"
+    },
+    {
+      "name": "omics-integration",
+      "category": "scientific",
+      "description": "Multi-omics data integration using MOFA+, DIABLO, and MixOmics for combining genomics, transcriptomics, proteomics, metabolomics, and epigenomics datasets. Use for identifying shared variation across omics layers, building integrative biomarker models, and discovering cross-modal biological patterns. Best for paired multi-omics cohort studies.",
+      "path": "skills/scientific/omics-integration/SKILL.md"
+    },
+    {
+      "name": "open-notebook",
+      "category": "scientific",
+      "description": "Self-hosted, open-source alternative to Google NotebookLM for AI-powered research and document analysis. Use when organizing research materials into notebooks, ingesting diverse content sources (PDFs, videos, audio, web pages, Office documents), generating AI-powered notes and summaries, creating multi-speaker podcasts from research, chatting with documents using context-aware AI, searching across materials with full-text and vector search, or running custom content transformations. Supports 16+ AI providers including OpenAI, Anthropic, Google, Ollama, Groq, and Mistral with complete data privacy through self-hosting.",
+      "path": "skills/scientific/open-notebook/SKILL.md"
+    },
+    {
+      "name": "opentrons-integration",
+      "category": "scientific",
+      "description": "Official Opentrons Protocol API for OT-2 and Flex robots. Use when writing protocols specifically for Opentrons hardware with full access to Protocol API v2 features. Best for production Opentrons protocols, official API compatibility. For multi-vendor automation or broader equipment control use pylabrobot.",
+      "path": "skills/scientific/opentrons-integration/SKILL.md"
+    },
+    {
+      "name": "optimize-for-gpu",
+      "category": "scientific",
+      "description": "\"GPU-accelerate Python code using CuPy, Numba CUDA, Warp, cuDF, cuML, cuGraph, KvikIO, cuCIM, cuxfilter, cuVS, cuSpatial, and RAFT. Use whenever the user mentions GPU/CUDA/NVIDIA acceleration, or wants to speed up NumPy, pandas, scikit-learn, scikit-image, NetworkX, GeoPandas, or Faiss workloads. Covers physics simulation, differentiable rendering, mesh ray casting, particle systems (DEM/SPH/fluids), vector/similarity search, GPUDirect Storage file IO, interactive dashboards, geospatial analysis, medical imaging, and sparse eigensolvers. Also use when you see CPU-bound Python code (loops, large arrays, ML pipelines, graph analytics, image processing) that would benefit from GPU acceleration, even if not explicitly requested.\"",
+      "path": "skills/scientific/optimize-for-gpu/SKILL.md"
+    },
+    {
+      "name": "pacsomatic",
+      "category": "scientific",
+      "description": "Operator toolkit for nf-core/pacsomatic matched tumor-normal workflows from BAM inputs. Use this skill when the user needs to validate run inputs, generate pacsomatic-compliant samplesheets, prepare reproducible Nextflow launch artifacts, run locally or submit to schedulers (LSF/Slurm/PBS/SGE), and triage execution failures. Triggers on requests to run pacsomatic, prepare launch commands/scripts, perform dry-run checks, or troubleshoot pipeline startup and scheduler submission errors.",
+      "path": "skills/scientific/pacsomatic/SKILL.md"
+    },
+    {
+      "name": "paper-lookup",
+      "category": "scientific",
+      "description": "Search 10 academic paper databases via REST APIs for research papers, preprints, and scholarly articles. Covers PubMed, PMC (full text), bioRxiv, medRxiv, arXiv, OpenAlex, Crossref, Semantic Scholar, CORE, Unpaywall. Use when searching for papers, citations, DOI/PMID lookups, abstracts, full text, open access, preprints, citation graphs, author search, or any scholarly literature query. Triggers on mentions of any supported database or requests like \"find papers on X\" or \"look up this DOI\".",
+      "path": "skills/scientific/paper-lookup/SKILL.md"
+    },
+    {
+      "name": "paperzilla",
+      "category": "scientific",
+      "description": "Chat with your agent about projects, recommendations, and canonical papers in Paperzilla. Use when users ask for recent project recommendations, canonical paper details, markdown-based summaries, recommendation feedback, feed export, or Atom feed URLs.",
+      "path": "skills/scientific/paperzilla/SKILL.md"
+    },
+    {
+      "name": "parallel-web",
+      "category": "scientific",
+      "description": "\"All-in-one web toolkit powered by parallel-cli, with a strong emphasis on academic and scientific sources. Use this skill whenever the user needs to search the web, fetch/extract URL content, enrich data with web-sourced fields, or run deep research reports. Covers: web search (fast lookups, research, current info \u2014 prioritizing peer-reviewed papers, preprints, and scholarly databases), URL extraction (fetching pages, articles, academic PDFs), bulk data enrichment (adding fields to CSV/lists from the web), and deep research (exhaustive multi-source reports grounded in academic literature). Also handles setup, status checks, and result retrieval. Use this skill for ANY web-related task \u2014 even if the user doesn't mention 'parallel' or 'web' explicitly. If they want to look something up, fetch a page, enrich a dataset, investigate a topic, find academic papers, check citations, or review scientific literature, this is the skill to use.\"",
+      "path": "skills/scientific/parallel-web/SKILL.md"
+    },
+    {
+      "name": "pathml",
+      "category": "scientific",
+      "description": "Full-featured computational pathology toolkit. Use for advanced WSI analysis including multiplexed immunofluorescence (CODEX, Vectra), nucleus segmentation, tissue graph construction, and ML model training on pathology data. Supports 160+ slide formats. For simple tile extraction from H&E slides, histolab may be simpler.",
+      "path": "skills/scientific/pathml/SKILL.md"
+    },
+    {
+      "name": "pdf",
+      "category": "scientific",
+      "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
+      "path": "skills/scientific/pdf/SKILL.md"
+    },
+    {
+      "name": "peer-review",
+      "category": "scientific",
+      "description": "Structured manuscript/grant review with checklist-based evaluation. Use when writing formal peer reviews with specific criteria methodology assessment, statistical validity, reporting standards compliance (CONSORT/STROBE), and constructive feedback. Best for actual review writing, manuscript revision. For evaluating claims/evidence quality use scientific-critical-thinking; for quantitative scoring frameworks use scholar-evaluation.",
+      "path": "skills/scientific/peer-review/SKILL.md"
+    },
+    {
+      "name": "pennylane",
+      "category": "scientific",
+      "description": "Hardware-agnostic quantum ML framework with automatic differentiation. Use when training quantum circuits via gradients, building hybrid quantum-classical models, or needing device portability across IBM/Google/Rigetti/IonQ. Best for variational algorithms (VQE, QAOA), quantum neural networks, and integration with PyTorch/JAX/TensorFlow. For hardware-specific optimizations use qiskit (IBM) or cirq (Google); for open quantum systems use qutip.",
+      "path": "skills/scientific/pennylane/SKILL.md"
+    },
+    {
+      "name": "phylogenetics",
+      "category": "scientific",
+      "description": "Build and analyze phylogenetic trees using MAFFT (multiple alignment), IQ-TREE 2 (maximum likelihood), and FastTree (fast NJ/ML). Visualize with ETE3 or FigTree. For evolutionary analysis, microbial genomics, viral phylodynamics, protein family analysis, and molecular clock studies.",
+      "path": "skills/scientific/phylogenetics/SKILL.md"
+    },
+    {
+      "name": "polars",
+      "category": "scientific",
+      "description": "Fast in-memory DataFrame library for datasets that fit in RAM. Use when pandas is too slow but data still fits in memory. Lazy evaluation, parallel execution, Apache Arrow backend. Best for 1-100GB datasets, ETL pipelines, faster pandas replacement. For larger-than-RAM data use dask or vaex.",
+      "path": "skills/scientific/polars/SKILL.md"
+    },
+    {
+      "name": "polars-bio",
+      "category": "scientific",
+      "description": "High-performance genomic interval operations and bioinformatics file I/O on Polars DataFrames. Overlap, nearest, merge, coverage, complement, subtract for BED/VCF/BAM/GFF intervals. Streaming, cloud-native, faster bioframe alternative.",
+      "path": "skills/scientific/polars-bio/SKILL.md"
+    },
+    {
+      "name": "pptx",
+      "category": "scientific",
+      "description": "\"Use this skill any time a .pptx file is involved in any way \u2014 as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions \\\"deck,\\\" \\\"slides,\\\" \\\"presentation,\\\" or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill.\"",
+      "path": "skills/scientific/pptx/SKILL.md"
+    },
+    {
+      "name": "pptx-posters",
+      "category": "scientific",
+      "description": "Create research posters using HTML/CSS that can be exported to PDF or PPTX. Use this skill ONLY when the user explicitly requests PowerPoint/PPTX poster format. For standard research posters, use latex-posters instead. This skill provides modern web-based poster design with responsive layouts and easy visual integration.",
+      "path": "skills/scientific/pptx-posters/SKILL.md"
+    },
+    {
+      "name": "primekg",
+      "category": "scientific",
+      "description": "Query the Precision Medicine Knowledge Graph (PrimeKG) for multiscale biological data including genes, drugs, diseases, phenotypes, and more.",
+      "path": "skills/scientific/primekg/SKILL.md"
+    },
+    {
+      "name": "protein-structure-prediction",
+      "category": "scientific",
+      "description": "Protein structure prediction and analysis using AlphaFold2, ESMFold, RoseTTAFold, and ColabFold. Use for 3D structure prediction from amino acid sequences, structure quality assessment, binding site identification, and structural comparison. Best for proteins without experimental structures.",
+      "path": "skills/scientific/protein-structure-prediction/SKILL.md"
+    },
+    {
+      "name": "proteomics-analysis",
+      "category": "scientific",
+      "description": "Mass spectrometry-based proteomics data analysis with pyteomics, spectrum_utils, and MaxQuant/DIA-NN output processing. Use for peptide identification, protein quantification (LFQ, TMT, SILAC), differential expression, PTM analysis, and proteomics data visualization. Covers both DDA and DIA proteomics workflows.",
+      "path": "skills/scientific/proteomics-analysis/SKILL.md"
+    },
+    {
+      "name": "protocolsio-integration",
+      "category": "scientific",
+      "description": "Integration with protocols.io API for managing scientific protocols. This skill should be used when working with protocols.io to search, create, update, or publish protocols; manage protocol steps and materials; handle discussions and comments; organize workspaces; upload and manage files; or integrate protocols.io functionality into workflows. Applicable for protocol discovery, collaborative protocol development, experiment tracking, lab protocol management, and scientific documentation.",
+      "path": "skills/scientific/protocolsio-integration/SKILL.md"
+    },
+    {
+      "name": "pufferlib",
+      "category": "scientific",
+      "description": "High-performance reinforcement learning framework optimized for speed and scale. Use when you need fast parallel training, vectorized environments, multi-agent systems, or integration with game environments (Atari, Procgen, NetHack). Achieves 2-10x speedups over standard implementations. For quick prototyping or standard algorithm implementations with extensive documentation, use stable-baselines3 instead.",
+      "path": "skills/scientific/pufferlib/SKILL.md"
+    },
+    {
+      "name": "pydeseq2",
+      "category": "scientific",
+      "description": "Differential gene expression analysis (Python DESeq2). Identify DE genes from bulk RNA-seq counts, Wald tests, FDR correction, volcano/MA plots, for RNA-seq analysis.",
+      "path": "skills/scientific/pydeseq2/SKILL.md"
+    },
+    {
+      "name": "pydicom",
+      "category": "scientific",
+      "description": "Python library for working with DICOM (Digital Imaging and Communications in Medicine) files. Use this skill when reading, writing, or modifying medical imaging data in DICOM format, extracting pixel data from medical images (CT, MRI, X-ray, ultrasound), anonymizing DICOM files, working with DICOM metadata and tags, converting DICOM images to other formats, handling compressed DICOM data, or processing medical imaging datasets. Applies to tasks involving medical image analysis, PACS systems, radiology workflows, and healthcare imaging applications.",
+      "path": "skills/scientific/pydicom/SKILL.md"
+    },
+    {
+      "name": "pyhealth",
+      "category": "scientific",
+      "description": "Build clinical/healthcare deep-learning pipelines with PyHealth \u2014 loading EHR/signal/imaging datasets (MIMIC-III/IV, eICU, OMOP, SleepEDF, ChestXray14, EHRShot), defining tasks (mortality, readmission, length-of-stay, drug recommendation, sleep staging, ICD coding, EEG events), instantiating models (Transformer, RETAIN, GAMENet, SafeDrug, MICRON, StageNet, AdaCare, CNN/RNN/MLP), training with the PyHealth Trainer, computing clinical metrics, and using medical code utilities (ICD/ATC/NDC/RxNorm lookup and cross-mapping). Use this skill whenever the user mentions PyHealth, MIMIC, eICU, OMOP, EHR modeling, clinical prediction, drug recommendation, sleep staging, medical code mapping, ICD/ATC codes, or any healthcare ML pipeline that fits the dataset \u2192 task \u2192 model \u2192 trainer \u2192 metrics pattern, even if \"PyHealth\" isn't named explicitly.",
+      "path": "skills/scientific/pyhealth/SKILL.md"
+    },
+    {
+      "name": "pylabrobot",
+      "category": "scientific",
+      "description": "Vendor-agnostic lab automation framework. Use when controlling multiple equipment types (Hamilton, Tecan, Opentrons, plate readers, pumps) or needing unified programming across different vendors. Best for complex workflows, multi-vendor setups, simulation. For Opentrons-only protocols with official API, opentrons-integration may be simpler.",
+      "path": "skills/scientific/pylabrobot/SKILL.md"
+    },
+    {
+      "name": "pymatgen",
+      "category": "scientific",
+      "description": "Materials science toolkit. Crystal structures (CIF, POSCAR), phase diagrams, band structure, DOS, Materials Project integration, format conversion, for computational materials science.",
+      "path": "skills/scientific/pymatgen/SKILL.md"
+    },
+    {
+      "name": "pymc",
+      "category": "scientific",
+      "description": "Bayesian modeling with PyMC. Build hierarchical models, MCMC (NUTS), variational inference, LOO/WAIC comparison, posterior checks, for probabilistic programming and inference.",
+      "path": "skills/scientific/pymc/SKILL.md"
+    },
+    {
+      "name": "pymoo",
+      "category": "scientific",
+      "description": "Multi-objective optimization framework. NSGA-II, NSGA-III, MOEA/D, Pareto fronts, constraint handling, benchmarks (ZDT, DTLZ), for engineering design and optimization problems.",
+      "path": "skills/scientific/pymoo/SKILL.md"
+    },
+    {
+      "name": "pyopenms",
+      "category": "scientific",
+      "description": "Complete mass spectrometry analysis platform. Use for proteomics workflows feature detection, peptide identification, protein quantification, and complex LC-MS/MS pipelines. Supports extensive file formats and algorithms. Best for proteomics, comprehensive MS data processing. For simple spectral comparison and metabolite ID use matchms.",
+      "path": "skills/scientific/pyopenms/SKILL.md"
+    },
+    {
+      "name": "pysam",
+      "category": "scientific",
+      "description": "Genomic file toolkit. Read/write SAM/BAM/CRAM alignments, VCF/BCF variants, FASTA/FASTQ sequences, extract regions, calculate coverage, for NGS data processing pipelines.",
+      "path": "skills/scientific/pysam/SKILL.md"
+    },
+    {
+      "name": "pytdc",
+      "category": "scientific",
+      "description": "Therapeutics Data Commons. AI-ready drug discovery datasets (ADME, toxicity, DTI), benchmarks, scaffold splits, molecular oracles, for therapeutic ML and pharmacological prediction.",
+      "path": "skills/scientific/pytdc/SKILL.md"
+    },
+    {
+      "name": "pytorch-lightning",
+      "category": "scientific",
+      "description": "Deep learning framework (PyTorch Lightning). Organize PyTorch code into LightningModules, configure Trainers for multi-GPU/TPU, implement data pipelines, callbacks, logging (W&B, TensorBoard), distributed training (DDP, FSDP, DeepSpeed), for scalable neural network training.",
+      "path": "skills/scientific/pytorch-lightning/SKILL.md"
+    },
+    {
+      "name": "pyzotero",
+      "category": "scientific",
+      "description": "Interact with Zotero reference management libraries using the pyzotero Python client. Retrieve, create, update, and delete items, collections, tags, and attachments via the Zotero Web API v3. Use this skill when working with Zotero libraries programmatically, managing bibliographic references, exporting citations, searching library contents, uploading PDF attachments, or building research automation workflows that integrate with Zotero.",
+      "path": "skills/scientific/pyzotero/SKILL.md"
+    },
+    {
+      "name": "qiskit",
+      "category": "scientific",
+      "description": "IBM quantum computing framework. Use when targeting IBM Quantum hardware, working with Qiskit Runtime for production workloads, or needing IBM optimization tools. Best for IBM hardware execution, quantum error mitigation, and enterprise quantum computing. For Google hardware use cirq; for gradient-based quantum ML use pennylane; for open quantum system simulations use qutip.",
+      "path": "skills/scientific/qiskit/SKILL.md"
+    },
+    {
+      "name": "qutip",
+      "category": "scientific",
+      "description": "Quantum physics simulation library for open quantum systems. Use when studying master equations, Lindblad dynamics, decoherence, quantum optics, or cavity QED. Best for physics research, open system dynamics, and educational simulations. NOT for circuit-based quantum computing\u2014use qiskit, cirq, or pennylane for quantum algorithms and hardware execution.",
+      "path": "skills/scientific/qutip/SKILL.md"
+    },
+    {
+      "name": "rdkit",
+      "category": "scientific",
+      "description": "Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, LogP, TPSA), fingerprints, substructure search, 2D/3D generation, similarity, reactions. For standard workflows with simpler interface, use datamol (wrapper around RDKit). Use rdkit for advanced control, custom sanitization, specialized algorithms.",
+      "path": "skills/scientific/rdkit/SKILL.md"
+    },
+    {
+      "name": "research-grants",
+      "category": "scientific",
+      "description": "Write competitive research proposals for NSF, NIH, DOE, DARPA, and Taiwan NSTC. Agency-specific formatting, review criteria, budget preparation, broader impacts, significance statements, innovation narratives, and compliance with submission requirements.",
+      "path": "skills/scientific/research-grants/SKILL.md"
+    },
+    {
+      "name": "research-lookup",
+      "category": "scientific",
+      "description": "'Look up current research information using parallel-cli search (primary, fast web search), the Parallel Chat API (deep research), or Perplexity sonar-pro-search (academic paper searches). Automatically routes queries to the best backend. Use for finding papers, gathering research data, and verifying scientific information. Note: query text is transmitted to api.parallel.ai (PARALLEL_API_KEY) and, for academic searches, to openrouter.ai (OPENROUTER_API_KEY).'",
+      "path": "skills/scientific/research-lookup/SKILL.md"
+    },
+    {
+      "name": "rowan",
+      "category": "scientific",
+      "description": "Rowan is a cloud-native molecular modeling and medicinal-chemistry workflow platform with a Python API. Use for pKa and macropKa prediction, conformer and tautomer ensembles, docking and analogue docking, protein-ligand cofolding, MSA generation, molecular dynamics, permeability, descriptor workflows, and related small-molecule or protein modeling tasks. Ideal for programmatic batch screening, multi-step chemistry pipelines, and workflows that would otherwise require maintaining local HPC/GPU infrastructure.",
+      "path": "skills/scientific/rowan/SKILL.md"
+    },
+    {
+      "name": "scanpy",
+      "category": "scientific",
+      "description": "Standard single-cell RNA-seq analysis pipeline. Use for QC, normalization, dimensionality reduction (PCA/UMAP/t-SNE), clustering, differential expression, and visualization. Best for exploratory scRNA-seq analysis with established workflows. For deep learning models use scvi-tools; for data format questions use anndata.",
+      "path": "skills/scientific/scanpy/SKILL.md"
+    },
+    {
+      "name": "scholar-evaluation",
+      "category": "scientific",
+      "description": "Systematically evaluate scholarly work using the ScholarEval framework, providing structured assessment across research quality dimensions including problem formulation, methodology, analysis, and writing with quantitative scoring and actionable feedback.",
+      "path": "skills/scientific/scholar-evaluation/SKILL.md"
+    },
+    {
+      "name": "scientific-brainstorming",
+      "category": "scientific",
+      "description": "Creative research ideation and exploration. Use for open-ended brainstorming sessions, exploring interdisciplinary connections, challenging assumptions, or identifying research gaps. Best for early-stage research planning when you do not have specific observations yet. For formulating testable hypotheses from data use hypothesis-generation.",
+      "path": "skills/scientific/scientific-brainstorming/SKILL.md"
+    },
+    {
+      "name": "scientific-critical-thinking",
+      "category": "scientific",
+      "description": "Evaluate scientific claims and evidence quality. Use for assessing experimental design validity, identifying biases and confounders, applying evidence grading frameworks (GRADE, Cochrane Risk of Bias), or teaching critical analysis. Best for understanding evidence quality, identifying flaws. For formal peer review writing use peer-review.",
+      "path": "skills/scientific/scientific-critical-thinking/SKILL.md"
+    },
+    {
+      "name": "scientific-schematics",
+      "category": "scientific",
+      "description": "Create publication-quality scientific diagrams using Nano Banana 2 AI with smart iterative refinement. Uses Gemini 3.1 Pro Preview for quality review. Only regenerates if quality is below threshold for your document type. Specialized in neural network architectures, system diagrams, flowcharts, biological pathways, and complex scientific visualizations.",
+      "path": "skills/scientific/scientific-schematics/SKILL.md"
+    },
+    {
+      "name": "scientific-slides",
+      "category": "scientific",
+      "description": "Build slide decks and presentations for research talks. Use this for making PowerPoint slides, conference presentations, seminar talks, research presentations, thesis defense slides, or any scientific talk. Provides slide structure, design templates, timing guidance, and visual validation. Works with PowerPoint and LaTeX Beamer.",
+      "path": "skills/scientific/scientific-slides/SKILL.md"
+    },
+    {
+      "name": "scientific-visualization",
+      "category": "scientific",
+      "description": "Meta-skill for publication-ready figures. Use when creating journal submission figures requiring multi-panel layouts, significance annotations, error bars, colorblind-safe palettes, and specific journal formatting (Nature, Science, Cell). Orchestrates matplotlib/seaborn/plotly with publication styles. For quick exploration use seaborn or plotly directly.",
+      "path": "skills/scientific/scientific-visualization/SKILL.md"
+    },
+    {
+      "name": "scientific-writing",
+      "category": "scientific",
+      "description": "Core skill for the deep research and writing tool. Write scientific manuscripts in full paragraphs (never bullet points). Use two-stage process with (1) section outlines with key points using research-lookup then (2) convert to flowing prose. IMRAD structure, citations (APA/AMA/Vancouver), figures/tables, reporting guidelines (CONSORT/STROBE/PRISMA), for research papers and journal submissions.",
+      "path": "skills/scientific/scientific-writing/SKILL.md"
+    },
+    {
+      "name": "scikit-bio",
+      "category": "scientific",
+      "description": "Biological data toolkit. Sequence analysis, alignments, phylogenetic trees, diversity metrics (alpha/beta, UniFrac), ordination (PCoA), PERMANOVA, FASTA/Newick I/O, for microbiome analysis.",
+      "path": "skills/scientific/scikit-bio/SKILL.md"
+    },
+    {
+      "name": "scikit-learn",
+      "category": "scientific",
+      "description": "Machine learning in Python with scikit-learn. Use when working with supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), model evaluation, hyperparameter tuning, preprocessing, or building ML pipelines. Provides comprehensive reference documentation for algorithms, preprocessing techniques, pipelines, and best practices.",
+      "path": "skills/scientific/scikit-learn/SKILL.md"
+    },
+    {
+      "name": "scikit-survival",
+      "category": "scientific",
+      "description": "Comprehensive toolkit for survival analysis and time-to-event modeling in Python using scikit-survival. Use this skill when working with censored survival data, performing time-to-event analysis, fitting Cox models, Random Survival Forests, Gradient Boosting models, or Survival SVMs, evaluating survival predictions with concordance index or Brier score, handling competing risks, or implementing any survival analysis workflow with the scikit-survival library.",
+      "path": "skills/scientific/scikit-survival/SKILL.md"
+    },
+    {
+      "name": "scvelo",
+      "category": "scientific",
+      "description": "RNA velocity analysis with scVelo. Estimate cell state transitions from unspliced/spliced mRNA dynamics, infer trajectory directions, compute latent time, and identify driver genes in single-cell RNA-seq data. Complements Scanpy/scVI-tools for trajectory inference.",
+      "path": "skills/scientific/scvelo/SKILL.md"
+    },
+    {
+      "name": "scvi-tools",
+      "category": "scientific",
+      "description": "Deep generative models for single-cell omics. Use when you need probabilistic batch correction (scVI), transfer learning, differential expression with uncertainty, or multi-modal integration (TOTALVI, MultiVI). Best for advanced modeling, batch effects, multimodal data. For standard analysis pipelines use scanpy.",
+      "path": "skills/scientific/scvi-tools/SKILL.md"
+    },
+    {
+      "name": "seaborn",
+      "category": "scientific",
+      "description": "Statistical visualization with pandas integration. Use for quick exploration of distributions, relationships, and categorical comparisons with attractive defaults. Best for box plots, violin plots, pair plots, heatmaps. Built on matplotlib. For interactive plots use plotly; for publication styling use scientific-visualization.",
+      "path": "skills/scientific/seaborn/SKILL.md"
+    },
+    {
+      "name": "shap",
+      "category": "scientific",
+      "description": "Model interpretability and explainability using SHAP (SHapley Additive exPlanations). Use this skill when explaining machine learning model predictions, computing feature importance, generating SHAP plots (waterfall, beeswarm, bar, scatter, force, heatmap), debugging models, analyzing model bias or fairness, comparing models, or implementing explainable AI. Works with tree-based models (XGBoost, LightGBM, Random Forest), deep learning (TensorFlow, PyTorch), linear models, and any black-box model.",
+      "path": "skills/scientific/shap/SKILL.md"
+    },
+    {
+      "name": "simpy",
+      "category": "scientific",
+      "description": "Process-based discrete-event simulation framework in Python. Use this skill when building simulations of systems with processes, queues, resources, and time-based events such as manufacturing systems, service operations, network traffic, logistics, or any system where entities interact with shared resources over time.",
+      "path": "skills/scientific/simpy/SKILL.md"
+    },
+    {
+      "name": "spatial-transcriptomics",
+      "category": "scientific",
+      "description": "Spatial transcriptomics data analysis with Squidpy, SpatialDE, and MERFISH/Visium/Xenium workflows. Use for spatial gene expression analysis, neighborhood enrichment, spatial variable gene detection, cell-cell communication with spatial context, and tissue domain identification. Complements Scanpy for spatially-resolved single-cell data.",
+      "path": "skills/scientific/spatial-transcriptomics/SKILL.md"
+    },
+    {
+      "name": "stable-baselines3",
+      "category": "scientific",
+      "description": "Production-ready reinforcement learning algorithms (PPO, SAC, DQN, TD3, DDPG, A2C) with scikit-learn-like API. Use for standard RL experiments, quick prototyping, and well-documented algorithm implementations. Best for single-agent RL with Gymnasium environments. For high-performance parallel training, multi-agent systems, or custom vectorized environments, use pufferlib instead.",
+      "path": "skills/scientific/stable-baselines3/SKILL.md"
+    },
+    {
+      "name": "statistical-analysis",
+      "category": "scientific",
+      "description": "Guided statistical analysis with test selection and reporting. Use when you need help choosing appropriate tests for your data, assumption checking, power analysis, and APA-formatted results. Best for academic research reporting, test selection guidance. For implementing specific models programmatically use statsmodels.",
+      "path": "skills/scientific/statistical-analysis/SKILL.md"
+    },
+    {
+      "name": "statsmodels",
+      "category": "scientific",
+      "description": "Statistical models library for Python. Use when you need specific model classes (OLS, GLM, mixed models, ARIMA) with detailed diagnostics, residuals, and inference. Best for econometrics, time series, rigorous inference with coefficient tables. For guided statistical test selection with APA reporting use statistical-analysis.",
+      "path": "skills/scientific/statsmodels/SKILL.md"
+    },
+    {
+      "name": "sympy",
+      "category": "scientific",
+      "description": "Use this skill when working with symbolic mathematics in Python. This skill should be used for symbolic computation tasks including solving equations algebraically, performing calculus operations (derivatives, integrals, limits), manipulating algebraic expressions, working with matrices symbolically, physics calculations, number theory problems, geometry computations, and generating executable code from mathematical expressions. Apply this skill when the user needs exact symbolic results rather than numerical approximations, or when working with mathematical formulas that contain variables and parameters.",
+      "path": "skills/scientific/sympy/SKILL.md"
+    },
+    {
+      "name": "tiledbvcf",
+      "category": "scientific",
+      "description": "Efficient storage and retrieval of genomic variant data using TileDB. Scalable VCF/BCF ingestion, incremental sample addition, compressed storage, parallel queries, and export capabilities for population genomics.",
+      "path": "skills/scientific/tiledbvcf/SKILL.md"
+    },
+    {
+      "name": "timesfm-forecasting",
+      "category": "scientific",
+      "description": "Zero-shot time series forecasting with Google's TimesFM foundation model. Use for any univariate time series (sales, sensors, energy, vitals, weather) without training a custom model. Supports CSV/DataFrame/array inputs with point forecasts and prediction intervals. Includes a preflight system checker script to verify RAM/GPU before first use.",
+      "path": "skills/scientific/timesfm-forecasting/SKILL.md"
+    },
+    {
+      "name": "torch-geometric",
+      "category": "scientific",
+      "description": "\"Guide for building Graph Neural Networks with PyTorch Geometric (PyG). Use this skill whenever the user asks about graph neural networks, GNNs, node classification, link prediction, graph classification, message passing networks, heterogeneous graphs, neighbor sampling, or any task involving torch_geometric / PyG. Also trigger when you see imports from torch_geometric, or the user mentions graph convolutions (GCN, GAT, GraphSAGE, GIN), graph data structures, or working with relational/network data. Even if the user just says 'graph learning' or 'geometric deep learning', use this skill.\"",
+      "path": "skills/scientific/torch-geometric/SKILL.md"
+    },
+    {
+      "name": "torchdrug",
+      "category": "scientific",
+      "description": "PyTorch-native graph neural networks for molecules and proteins. Use when building custom GNN architectures for drug discovery, protein modeling, or knowledge graph reasoning. Best for custom model development, protein property prediction, retrosynthesis. For pre-trained models and diverse featurizers use deepchem; for benchmark datasets use pytdc.",
+      "path": "skills/scientific/torchdrug/SKILL.md"
+    },
+    {
+      "name": "transformers",
+      "category": "scientific",
+      "description": "This skill should be used when working with pre-trained transformer models for natural language processing, computer vision, audio, or multimodal tasks. Use for text generation, classification, question answering, translation, summarization, image classification, object detection, speech recognition, and fine-tuning models on custom datasets.",
+      "path": "skills/scientific/transformers/SKILL.md"
+    },
+    {
+      "name": "treatment-plans",
+      "category": "scientific",
+      "description": "Generate concise (3-4 page), focused medical treatment plans in LaTeX/PDF format for all clinical specialties. Supports general medical treatment, rehabilitation therapy, mental health care, chronic disease management, perioperative care, and pain management. Includes SMART goal frameworks, evidence-based interventions with minimal text citations, regulatory compliance (HIPAA), and professional formatting. Prioritizes brevity and clinical actionability.",
+      "path": "skills/scientific/treatment-plans/SKILL.md"
+    },
+    {
+      "name": "umap-learn",
+      "category": "scientific",
+      "description": "UMAP dimensionality reduction. Fast nonlinear manifold learning for 2D/3D visualization, clustering preprocessing (HDBSCAN), supervised/parametric UMAP, for high-dimensional data.",
+      "path": "skills/scientific/umap-learn/SKILL.md"
+    },
+    {
+      "name": "usfiscaldata",
+      "category": "scientific",
+      "description": "Query the U.S. Treasury Fiscal Data API for federal financial data including national debt, government spending, revenue, interest rates, exchange rates, and savings bonds. Access 54 datasets and 182 data tables with no API key required. Use when working with U.S. federal fiscal data, national debt tracking (Debt to the Penny), Daily Treasury Statements, Monthly Treasury Statements, Treasury securities auctions, interest rates on Treasury securities, foreign exchange rates, savings bonds, or any U.S. government financial statistics.",
+      "path": "skills/scientific/usfiscaldata/SKILL.md"
+    },
+    {
+      "name": "vaex",
+      "category": "scientific",
+      "description": "Use this skill for processing and analyzing large tabular datasets (billions of rows) that exceed available RAM. Vaex excels at out-of-core DataFrame operations, lazy evaluation, fast aggregations, efficient visualization of big data, and machine learning on large datasets. Apply when users need to work with large CSV/HDF5/Arrow/Parquet files, perform fast statistics on massive datasets, create visualizations of big data, or build ML pipelines that do not fit in memory.",
+      "path": "skills/scientific/vaex/SKILL.md"
+    },
+    {
+      "name": "venue-templates",
+      "category": "scientific",
+      "description": "Access comprehensive LaTeX templates, formatting requirements, and submission guidelines for major scientific publication venues (Nature, Science, PLOS, IEEE, ACM), academic conferences (NeurIPS, ICML, CVPR, CHI), research posters, and grant proposals (NSF, NIH, DOE, DARPA). This skill should be used when preparing manuscripts for journal submission, conference papers, research posters, or grant proposals and need venue-specific formatting requirements and templates.",
+      "path": "skills/scientific/venue-templates/SKILL.md"
+    },
+    {
+      "name": "what-if-oracle",
+      "category": "scientific",
+      "description": "Run structured What-If scenario analysis with multi-branch possibility exploration. Use this skill when the user asks speculative questions like \"what if...\", \"what would happen if...\", \"what are the possibilities\", \"explore scenarios\", \"scenario analysis\", \"possibility space\", \"what could go wrong\", \"best case / worst case\", \"risk analysis\", \"contingency planning\", \"strategic options\", or any question about uncertain futures. Also trigger when the user faces a fork-in-the-road decision, wants to stress-test an idea, or needs to think through consequences before committing.",
+      "path": "skills/scientific/what-if-oracle/SKILL.md"
+    },
+    {
+      "name": "xlsx",
+      "category": "scientific",
+      "description": "\"Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path \u2014 even casually (like \\\"the xlsx in my downloads\\\") \u2014 and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.\"",
+      "path": "skills/scientific/xlsx/SKILL.md"
+    },
+    {
+      "name": "zarr-python",
+      "category": "scientific",
+      "description": "Chunked N-D arrays for cloud storage. Compressed arrays, parallel I/O, S3/GCS integration, NumPy/Dask/Xarray compatible, for large-scale scientific computing pipelines.",
+      "path": "skills/scientific/zarr-python/SKILL.md"
+    }
+  ]
+}
